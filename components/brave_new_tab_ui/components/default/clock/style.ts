@@ -12,10 +12,10 @@ export const StyledClock = styled('div')<{}>`
   user-select: none;
   display: flex;
   -webkit-font-smoothing: antialiased;
- font-family: 'Abhaya Libre', serif;
-  position:absolute;
-  left:50px;
-  top:50px;
+//  font-family: 'Abhaya Libre', serif;
+  // position:absolute;
+  // left:50px;
+  // top:50px;
 font-face{
   font-family: 'Abhaya Libre', serif;
   src: url(https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap);

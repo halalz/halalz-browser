@@ -10,10 +10,19 @@ import getNTPBrowserAPI from '../../api/background'
 import { addNewTopSite, editTopSite } from '../../api/topSites'
 import { brandedWallpaperLogoClicked } from '../../api/wallpaper'
 import {
-  BraveTalkWidget as BraveTalk, Clock, EditCards, EditTopSite, OverrideReadabilityColor, RewardsWidget as Rewards, SearchPromotion
+  BraveTalkWidget as BraveTalk,
+  Clock,
+  EditCards,
+   EditTopSite,
+  OverrideReadabilityColor,
+  RewardsWidget as Rewards,
+  SearchPromotion
 } from '../../components/default'
 import BrandedWallpaperLogo from '../../components/default/brandedWallpaper/logo'
-import BraveToday, { GetDisplayAdContent } from '../../components/default/braveToday'
+import
+//  BraveToday,
+{ GetDisplayAdContent }
+  from '../../components/default/braveToday'
 import FooterInfo from '../../components/default/footer/footer'
 import * as Page from '../../components/default/page'
 import { SponsoredImageTooltip } from '../../components/default/rewards'
@@ -21,11 +30,14 @@ import TopSitesGrid from './gridSites'
 import SiteRemovalNotification from './notification'
 // import Stats from './stats'
 import "./index.scss"
-import { InputContainer, InputLeftIcon, InputSearchBox, StyledExploreButton } from './indexStyle';
-import {GreetingContainer,GreetingFirstChild,GreetingSecondChild} from "./indexStyle"
-import Logo from "../../Minigo_Assets/Path.png"
-import SearchIcons from "../../Minigo_Assets/search.png"
+import { InputContainer, InputLeftIcon, InputSearchBox, NewFooter, StyledExploreButton, StyleSuggestions, StyleSuggestionsGrid, StyleSuggestionsGridContainer } from './indexStyle';
+import { GreetingContainer, GreetingFirstChild, GreetingSecondChild } from "./indexStyle"
 
+import Logo from "../../Minego_Assets/Path.png"
+import SearchIcons from "../../Minego_Assets/search.png"
+import YoutubeIcon from "../../Minego_Assets/youtube.png"
+import FacebookIcon from "../../Minego_Assets/facebook.png"
+import DisneyIcon from "../../Minego_Assets/Bitmap.png"
 // Helpers
 import isReadableOnBackground from '../../helpers/colorUtil'
 import VisibilityTimer from '../../helpers/visibilityTimer'
@@ -37,10 +49,13 @@ import { BraveTodayState } from '../../reducers/today'
 
 // NTP features
 import { MAX_GRID_SIZE } from '../../constants/new_tab_ui'
-import Settings, { TabType as SettingsTabType } from './settings'
+import
+Settings,
+{ TabType as SettingsTabType }
+  from './settings'
 
 import { BraveNewsContextProvider } from '../../components/default/braveToday/customize/Context'
-import BraveTodayHint from '../../components/default/braveToday/hint'
+// import BraveTodayHint from '../../components/default/braveToday/hint'
 import GridWidget from './gridWidget'
 
 interface Props {
@@ -73,7 +88,7 @@ interface State {
   forceToHideWidget: boolean
 }
 
-function GetBackgroundImageSrc (props: Props) {
+function GetBackgroundImageSrc(props: Props) {
   if (!props.newTabData.showBackgroundImage &&
     (!props.newTabData.brandedWallpaper || props.newTabData.brandedWallpaper.isSponsored)) {
     return undefined
@@ -86,20 +101,20 @@ function GetBackgroundImageSrc (props: Props) {
   }
 
   if (props.newTabData.backgroundWallpaper?.type === 'image' ||
-      props.newTabData.backgroundWallpaper?.type === 'brave') {
+    props.newTabData.backgroundWallpaper?.type === 'brave') {
     return props.newTabData.backgroundWallpaper.wallpaperImageUrl
   }
 
   return undefined
 }
 
-function GetShouldShowSearchPromotion (props: Props, showSearchPromotion: boolean) {
+function GetShouldShowSearchPromotion(props: Props, showSearchPromotion: boolean) {
   if (GetIsShowingBrandedWallpaper(props)) { return false }
 
   return props.newTabData.searchPromotionEnabled && showSearchPromotion
 }
 
-function GetShouldForceToHideWidget (props: Props, showSearchPromotion: boolean) {
+function GetShouldForceToHideWidget(props: Props, showSearchPromotion: boolean) {
   if (!GetShouldShowSearchPromotion(props, showSearchPromotion)) {
     return false
   }
@@ -108,13 +123,13 @@ function GetShouldForceToHideWidget (props: Props, showSearchPromotion: boolean)
   return window.innerWidth < 1000
 }
 
-function GetIsShowingBrandedWallpaper (props: Props) {
+function GetIsShowingBrandedWallpaper(props: Props) {
   const { newTabData } = props
   return !!((newTabData.brandedWallpaper &&
     newTabData.brandedWallpaper.isSponsored))
 }
 
-function GetShouldShowBrandedWallpaperNotification (props: Props) {
+function GetShouldShowBrandedWallpaperNotification(props: Props) {
   return GetIsShowingBrandedWallpaper(props) &&
     !props.newTabData.isBrandedWallpaperNotificationDismissed
 }
@@ -140,7 +155,7 @@ class NewTabPage extends React.Component<Props, State> {
 
   visibilityTimer = new VisibilityTimer(this.onVisiblityTimerExpired, 4000)
 
-  componentDidMount () {
+  componentDidMount() {
     // if a notification is open at component mounting time, close it
     this.props.actions.showTilesRemovedNotice(false)
     this.imageSource = GetBackgroundImageSrc(this.props)
@@ -171,14 +186,14 @@ class NewTabPage extends React.Component<Props, State> {
     window.addEventListener('resize', this.handleResize.bind(this))
   }
 
-  componentWillUnmount () {
+  componentWillUnmount() {
     if (this.braveNewsPromptTimerId) {
       window.clearTimeout(this.braveNewsPromptTimerId)
     }
     window.removeEventListener('resize', this.handleResize.bind(this))
   }
 
-  componentDidUpdate (prevProps: Props) {
+  componentDidUpdate(prevProps: Props) {
     const oldImageSource = GetBackgroundImageSrc(prevProps)
     const newImageSource = GetBackgroundImageSrc(this.props)
     this.imageSource = newImageSource
@@ -201,17 +216,17 @@ class NewTabPage extends React.Component<Props, State> {
     }
   }
 
-  shouldOverrideReadabilityColor (newTabData: NewTab.State) {
+  shouldOverrideReadabilityColor(newTabData: NewTab.State) {
     return !newTabData.brandedWallpaper && newTabData.backgroundWallpaper?.type === 'color' && !isReadableOnBackground(newTabData.backgroundWallpaper)
   }
 
-  handleResize () {
+  handleResize() {
     this.setState({
       forceToHideWidget: GetShouldForceToHideWidget(this.props, this.state.showSearchPromotion)
     })
   }
 
-  trackCachedImage () {
+  trackCachedImage() {
     if (this.state.backgroundHasLoaded) {
       this.setState({ backgroundHasLoaded: false })
     }
@@ -228,13 +243,13 @@ class NewTabPage extends React.Component<Props, State> {
     }
   }
 
-  trackBrandedWallpaperNotificationAutoDismiss () {
+  trackBrandedWallpaperNotificationAutoDismiss() {
     // Wait until page has been visible for an uninterupted Y seconds and then
     // dismiss the notification.
     this.visibilityTimer.startTracking()
   }
 
-  checkShouldOpenSettings () {
+  checkShouldOpenSettings() {
     const params = window.location.search
     const urlParams = new URLSearchParams(params)
     const openSettings = urlParams.get('openSettings') || this.props.newTabData.forceSettingsTab
@@ -256,7 +271,7 @@ class NewTabPage extends React.Component<Props, State> {
     }
   }
 
-  stopWaitingForBrandedWallpaperNotificationAutoDismiss () {
+  stopWaitingForBrandedWallpaperNotificationAutoDismiss() {
     this.visibilityTimer.stopTracking()
   }
 
@@ -381,7 +396,7 @@ class NewTabPage extends React.Component<Props, State> {
     window.open('https://brave.com/brave-rewards/', '_blank', 'noopener')
   }
 
-  getCryptoContent () {
+  getCryptoContent() {
     if (this.props.newTabData.hideAllWidgets) {
       return null
     }
@@ -439,7 +454,7 @@ class NewTabPage extends React.Component<Props, State> {
     ].every((widget: boolean) => !widget)
   }
 
-  renderCryptoContent () {
+  renderCryptoContent() {
     const { newTabData } = this.props
     const { widgetStackOrder } = newTabData
     const allWidgetsHidden = this.allWidgetsHidden()
@@ -458,7 +473,7 @@ class NewTabPage extends React.Component<Props, State> {
     )
   }
 
-  renderSearchPromotion () {
+  renderSearchPromotion() {
     if (!GetShouldShowSearchPromotion(this.props, this.state.showSearchPromotion)) {
       return null
     }
@@ -472,7 +487,7 @@ class NewTabPage extends React.Component<Props, State> {
     )
   }
 
-  renderBrandedWallpaperNotification () {
+  renderBrandedWallpaperNotification() {
     if (!GetShouldShowBrandedWallpaperNotification(this.props)) {
       return null
     }
@@ -495,7 +510,7 @@ class NewTabPage extends React.Component<Props, State> {
     )
   }
 
-  renderRewardsWidget (showContent: boolean, position: number) {
+  renderRewardsWidget(showContent: boolean, position: number) {
     const { rewardsState, showRewards, textDirection, braveRewardsSupported } = this.props.newTabData
     if (!braveRewardsSupported || !showRewards) {
       return null
@@ -522,7 +537,7 @@ class NewTabPage extends React.Component<Props, State> {
     )
   }
 
-  renderBraveTalkWidget (showContent: boolean, position: number) {
+  renderBraveTalkWidget(showContent: boolean, position: number) {
     const { newTabData } = this.props
     const { showBraveTalk, textDirection, braveTalkSupported } = newTabData
 
@@ -546,9 +561,18 @@ class NewTabPage extends React.Component<Props, State> {
     )
   }
 
-  render () {
-    const { newTabData, gridSitesData, actions } = this.props
-    const { showSettingsMenu, showEditTopSite, targetTopSiteForEditing, forceToHideWidget } = this.state
+  render() {
+    const { newTabData,
+       gridSitesData, 
+       actions 
+    }
+      = this.props
+    const
+      {
+        showSettingsMenu,
+         showEditTopSite,
+        targetTopSiteForEditing, 
+        forceToHideWidget } = this.state
 
     if (!newTabData) {
       return null
@@ -589,9 +613,9 @@ class NewTabPage extends React.Component<Props, State> {
         imageHasLoaded={this.state.backgroundHasLoaded}
         colorForBackground={colorForBackground}
         data-show-news-prompt={((this.state.backgroundHasLoaded || colorForBackground) && this.state.isPromptingBraveToday) ? true : undefined}>
-        <OverrideReadabilityColor override={ this.shouldOverrideReadabilityColor(this.props.newTabData) } />
+        <OverrideReadabilityColor override={this.shouldOverrideReadabilityColor(this.props.newTabData)} />
         <BraveNewsContext>
-        <Page.Page
+          <Page.Page
             hasImage={hasImage}
             imageSrc={this.imageSource}
             imageHasLoaded={this.state.backgroundHasLoaded}
@@ -601,48 +625,49 @@ class NewTabPage extends React.Component<Props, State> {
             showCryptoContent={!!cryptoContent}
             showTopSites={showTopSites}
             showBrandedWallpaper={isShowingBrandedWallpaper}
-        >
-            {this.renderSearchPromotion()} 
-            <div style={{display:"flex"}}>
-            <GridWidget
-            pref='showStats'
-            container={Page.GridItemStats}
-            paddingType={'right'}
-            widgetTitle={getLocale('statsTitle')}
-            textDirection={newTabData.textDirection}
-              menuPosition={'right'}>
-              <Clock />
-            
+          >
+            {this.renderSearchPromotion()}
+            <div className="upper-con" style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <GridWidget
+                pref='showStats'
+                container={Page.GridItemStats}
+                paddingType={'right'}
+                widgetTitle={getLocale('statsTitle')}
+                textDirection={newTabData.textDirection}
+                menuPosition={'right'}>
+                <Clock />
+
               </GridWidget>
-             
+              <StyledExploreButton className='btn-explore'>
+                <img style={{ width: "25px", height: "13px" }} src={Logo} alt="" />
+                <div className='inner-btnS' style={{ color: "white", }}>Explore Minego</div>
+              </StyledExploreButton>
             </div>
-         
-          {/* <GridWidget
+
+{/* Tracker Commented */}
+            {/* <GridWidget
             pref='showClock'
             container={Page.GridItemClock}
             paddingType='right'
             widgetTitle={getLocale('clockTitle')}
             textDirection={newTabData.textDirection}
-            menuPosition='left'> */}
-            <StyledExploreButton className='btn-explore'>
-              <img style={{ width: "25px",height:"13px"}} src={Logo} alt="" />
-              <div className='inner-btnS' style={{ color: "white" }}>Explore Minigo</div>
-            </StyledExploreButton>
-            {/* <Stats stats={newTabData.stats}/> */}
-            {/* </GridWidget> */}
+            menuPosition='left'>
+
+            <Stats stats={newTabData.stats}/>
+            </GridWidget> */}
 
             <GreetingContainer className='greeting'>
               <GreetingFirstChild className="first">Hello Again</GreetingFirstChild>
               <GreetingSecondChild className="second">Its Good to See you here</GreetingSecondChild>
-              
             </GreetingContainer>
-            <InputContainer>
-              <InputLeftIcon><img src={SearchIcons}  /></InputLeftIcon>
-              <InputSearchBox placeholder='Search...'>
-              
-              </InputSearchBox>
-            </InputContainer>
-          {
+            <div className='bottom-hand' style={{ margin: "50px 60px" }}>
+              <InputContainer>
+                <InputLeftIcon><img src={SearchIcons} /></InputLeftIcon>
+                <InputSearchBox placeholder='Search...'>
+
+                </InputSearchBox>
+              </InputContainer>
+              {
             showTopSites &&
               <Page.GridItemTopSites>
                 <TopSitesGrid
@@ -660,7 +685,54 @@ class NewTabPage extends React.Component<Props, State> {
                 />
               </Page.GridItemTopSites>
             }
-            {
+              <NewFooter>
+
+                <StyleSuggestions>
+                  <p>Suggestions</p>
+                  <StyleSuggestionsGridContainer>
+                    <StyleSuggestionsGrid>
+                      <img src={YoutubeIcon} alt="youtubeIcon" />
+                      <p style={{ color: "white" }}>Youtube</p>
+                    </StyleSuggestionsGrid>
+                    <StyleSuggestionsGrid>
+                      <img src={FacebookIcon} alt="Facebook Icon" />
+                      <p style={{ color: "white" }}>Youtube</p>
+                    </StyleSuggestionsGrid>
+                    <StyleSuggestionsGrid>
+                      <img src={DisneyIcon} alt="DisneyIcon" />
+                      <p style={{ color: "white" }}>Youtube</p>
+                    </StyleSuggestionsGrid>
+                  </StyleSuggestionsGridContainer>
+                </StyleSuggestions>
+                <Page.Footer>
+                  <Page.FooterContent>
+                    {isShowingBrandedWallpaper && newTabData.brandedWallpaper &&
+                      newTabData.brandedWallpaper.logo &&
+                      <Page.GridItemBrandedLogo>
+                        <BrandedWallpaperLogo
+                          menuPosition={'right'}
+                          paddingType={'default'}
+                          textDirection={newTabData.textDirection}
+                          onClickLogo={this.onClickLogo}
+                          data={newTabData.brandedWallpaper.logo}
+                        />
+                        {this.renderBrandedWallpaperNotification()}
+                      </Page.GridItemBrandedLogo>}
+                    <FooterInfo
+                      textDirection={newTabData.textDirection}
+                      supportsBraveTalk={newTabData.braveTalkSupported}
+                      showBraveTalkPrompt={newTabData.braveTalkPromptAllowed && !newTabData.braveTalkPromptDismissed}
+                      backgroundImageInfo={newTabData.backgroundWallpaper}
+                      showPhotoInfo={!isShowingBrandedWallpaper && hasWallpaperInfo && newTabData.showBackgroundImage}
+                      onClickSettings={this.openSettings}
+                      onDismissBraveTalkPrompt={this.props.actions.dismissBraveTalkPrompt}
+                    />
+                  </Page.FooterContent>
+                </Page.Footer>
+              </NewFooter>
+
+  
+              {
               gridSitesData.shouldShowSiteRemovedNotification
                 ? (
                   <Page.GridItemNotification>
@@ -668,8 +740,12 @@ class NewTabPage extends React.Component<Props, State> {
                   </Page.GridItemNotification>
                 ) : null
             }
-            {cryptoContent}
-            <Page.Footer>
+              {cryptoContent}
+            </div>
+
+
+
+            {/* <Page.Footer>
               <Page.FooterContent>
                 {isShowingBrandedWallpaper && newTabData.brandedWallpaper &&
                   newTabData.brandedWallpaper.logo &&
@@ -693,14 +769,14 @@ class NewTabPage extends React.Component<Props, State> {
                   onDismissBraveTalkPrompt={this.props.actions.dismissBraveTalkPrompt}
                 />
               </Page.FooterContent>
-            </Page.Footer>
-            {newTabData.showToday &&
+            </Page.Footer> */}
+            {/* {newTabData.showToday &&
               <Page.GridItemNavigationBraveToday>
                 <BraveTodayHint />
               </Page.GridItemNavigationBraveToday>
-            }
+            } */}
           </Page.Page>
-        { newTabData.showToday && newTabData.featureFlagBraveNewsEnabled &&
+          {/* { newTabData.showToday && newTabData.featureFlagBraveNewsEnabled &&
         <BraveToday
           feed={this.props.todayData.feed}
           articleToScrollTo={this.props.todayData.articleScrollTo}
@@ -726,8 +802,8 @@ class NewTabPage extends React.Component<Props, State> {
           onVisitDisplayAd={this.props.actions.today.visitDisplayAd}
           getDisplayAd={this.props.getBraveNewsDisplayAd}
         />
-        }
-        <Settings
+        } */}
+          <Settings
           actions={actions}
           textDirection={newTabData.textDirection}
           showSettingsMenu={showSettingsMenu}
@@ -765,7 +841,7 @@ class NewTabPage extends React.Component<Props, State> {
           newTabData={this.props.newTabData}
           onEnableRewards={this.startRewards}
         />
-        {
+          {
           showEditTopSite
             ? <EditTopSite
               targetTopSiteForEditing={targetTopSiteForEditing}

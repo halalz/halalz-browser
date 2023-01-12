@@ -16,7 +16,8 @@ import {
   SettingsSidebarButton,
   SettingsSidebarActiveButtonSlider,
   SettingsSidebarButtonText,
-  SettingsSidebarSVGContent
+  SettingsSidebarSVGContent,
+  SettingsSecondHeader
 } from '../../components/default'
 
 import { getLocale } from '../../../common/locale'
@@ -24,13 +25,16 @@ import { Publishers } from '../../api/brave_news'
 import { BraveNewsContext } from '../../components/default/braveToday/customize/Context'
 
 // Icons
-import { CloseStrokeIcon } from 'brave-ui/components/icons'
+// import { CloseStrokeIcon } from 'brave-ui/components/icons'
 import BackgroundImageIcon from './settings/icons/backgroundImage.svg'
 import BraveStatsIcon from './settings/icons/braveStats.svg'
 import TopSitesIcon from './settings/icons/topSites.svg'
 import ClockIcon from './settings/icons/clock.svg'
 import CardsIcon from './settings/icons/cards.svg'
 import TodayIcon from './settings/icons/braveToday.svg'
+// Minego
+// import CustomizeIcon from "../../Minego_Assets/Wallet.png"
+// import CrossIcon from "../../Minego_Assets/cross.png"
 
 // Tabs
 const BackgroundImageSettings = React.lazy(() => import('./settings/backgroundImage'))
@@ -294,17 +298,45 @@ export default class Settings extends React.PureComponent<Props, State> {
           title={getLocale('dashboardSettingsTitle')}
         >
           <SettingsTitle id='settingsTitle'>
+           
+              {/* <CustomizeIcon/> */}
+            
             <h1>{getLocale('dashboardSettingsTitle')}</h1>
+            
             <SettingsCloseIcon onClick={this.props.onClose}>
-              <CloseStrokeIcon />
+              {/* <CrossIcon /> */}
             </SettingsCloseIcon>
           </SettingsTitle>
+          <SettingsSecondHeader>
+          {
+                tabTypes.map((tabType, index) => {
+                  const titleKey = this.getTabTitleKey(tabType)
+                  const isActive = (activeTab === tabType)
+                  return (
+                    <SettingsSidebarButton
+                      tabIndex={0}
+                      key={`sidebar-button-${index}`}
+                      activeTab={isActive}
+                      onClick={this.setActiveTab.bind(this, tabType)}
+                    >
+                      {/* {this.getTabIcon(tabType, isActive)} */}
+                      <SettingsSidebarButtonText
+                        isActive={isActive}
+                        data-text={getLocale(titleKey)}
+                      >
+                        {getLocale(titleKey)}
+                      </SettingsSidebarButtonText>
+                    </SettingsSidebarButton>
+                  )
+                })
+              }
+          </SettingsSecondHeader>
           <SettingsContent id='settingsBody'>
             <SettingsSidebar id='sidebar'>
               <SettingsSidebarActiveButtonSlider
                 translateTo={tabTypes.indexOf(activeTab)}
               />
-              {
+              {/* {
                 tabTypes.map((tabType, index) => {
                   const titleKey = this.getTabTitleKey(tabType)
                   const isActive = (activeTab === tabType)
@@ -325,7 +357,7 @@ export default class Settings extends React.PureComponent<Props, State> {
                     </SettingsSidebarButton>
                   )
                 })
-              }
+              } */}
             </SettingsSidebar>
             <SettingsFeatureBody id='content'>
               {/* Empty loading fallback is ok here since we are loading from local disk. */}

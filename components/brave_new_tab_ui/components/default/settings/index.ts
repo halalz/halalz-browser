@@ -54,7 +54,7 @@ export const SettingsMenu = styled('div')<Props>`
   background-color: ${p => p.theme.color.contextMenuBackground};
   color:  ${p => p.theme.color.contextMenuForeground};
   border-radius: 8px;
-  padding: 24px;
+  padding: 24px 0px ;
   padding-bottom: 0px;
   box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.24);
   font-family: ${p => p.theme.fontFamily.body};
@@ -144,7 +144,8 @@ export const SettingsSidebarButtonText = styled('span')<{ isActive: boolean }>`
   font-size: 13px;
   font-family: ${p => p.theme.fontFamily.heading};
   line-height: normal;
-  color: ${p => p.theme.color.contextMenuForeground};
+  // color: ${p => p.theme.color.contextMenuForeground};
+  color:#FFFFFF;
   position: relative;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -155,13 +156,17 @@ export const SettingsSidebarButtonText = styled('span')<{ isActive: boolean }>`
               font-weight var(--sidebar-button-transition-timing) ease-in-out;
 
   &:hover {
-    color: ${p => p.theme.color.brandBrave};
+    // color: ${p => p.theme.color.brandBrave};
+    color:#9725FF;
   }
 
   ${p => p.isActive && css`
     --active-opacity: 1;
     font-weight: 600;
-    color: ${p => p.theme.palette.magenta500};
+    // color: ${p => p.theme.palette.magenta500};
+    color:#9725FF;
+    border-bottom:1px solid #9725FF;
+    padding-bottom:10px;
   `}
 
   /* Active version (hidden until item is active).
@@ -221,10 +226,12 @@ export const SettingsSidebarButton = styled('button')<SettingsSidebarButtonProps
   &:active,
   &:focus {
     outline: none;
+
   }
 
   &:active {
     --active-opacity: 1;
+
   }
 
   &:focus-visible {
@@ -243,9 +250,11 @@ export const SettingsFeatureBody = styled('section')<{}>`
 
 export const SettingsTitle = styled('div')<{}>`
   margin-bottom: 17px;
+  padding:0px 20px;
   grid-template-columns: 1fr 20px;
   display: grid;
   align-items: center;
+  backgrond-color:#35363A;
 
   h1 {
     font-family: ${p => p.theme.fontFamily.heading};
@@ -686,3 +695,12 @@ font-weight: 400;
 font-size: 14px;
 line-height: 20px;
 `
+
+
+export const SettingsSecondHeader = styled('div')<{}>`
+display:flex;
+border-bottom:1px solid gray;
+padding:0px 24px;
+`
+
+

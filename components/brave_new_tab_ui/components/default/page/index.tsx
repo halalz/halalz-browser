@@ -56,7 +56,7 @@ const StyledPage = styled('div')<PageProps>`
   --ntp-page-padding: 12px;
   --ntp-item-justify: start;
   --blur-amount: calc(var(--ntp-extra-content-effect-multiplier, 0) * 38px);
-  @media screen and (max-width: ${breakpointLargeBlocks}) {
+  @media screen and (m]yt5fe43a2q1ax-width: ${breakpointLargeBlocks}) {
     --ntp-space-rows: 1;
   }
   @media screen and (max-width: ${breakpointEveryBlock}) {
@@ -68,17 +68,21 @@ const StyledPage = styled('div')<PageProps>`
   position: relative;
   z-index: 6;
   width: 100%;
-  display: grid;
-  grid-template-rows: repeat(calc(var(--ntp-page-rows) - 1), min-content) auto;
-  grid-template-columns: min-content auto min-content;
-  grid-auto-flow: row dense;
-  padding: var(--ntp-page-padding);
-  overflow: hidden;
+  display:flex;
+  flex-direction:column;
+  padding:50px 80px;
   flex: 1;
-  flex-direction: column;
-  justify-content: space-between;
+  overflow: hidden;
+  // padding: var(--ntp-page-padding);
+  // display: grid;
+  // grid-template-rows: repeat(calc(var(--ntp-page-rows) - 1), min-content) auto;
+  // grid-template-columns: min-content auto min-content;
+  // grid-auto-flow: row dense;
+  // flex-direction: column;
+  // justify-content: space-between;
   min-height: 100vh;
-  align-items: flex-start;
+  // align-items: flex-start;
+
 
   /* Fix the main NTP content so, when Brave Today is in-view,
   NTP items remain in the same place, and still allows NTP
@@ -165,26 +169,28 @@ export const Page: React.FunctionComponent<PageProps> = (props) => {
 }
 
 export const GridItemStats = styled('section')`
-  grid-column: 1 / span 2;
+  // grid-column: 1 / span 2;
   ${singleColumnSmallViewport}
 `
 
 export const GridItemClock = styled('section')`
-  grid-column: 3;
-  justify-self: center;
+  // grid-column: 3;
+  // justify-self: center;
   ${singleColumnSmallViewport}
 `
 
 export const GridItemWidgetStack = styled('section')`
-  grid-column: 3 / span 1;
-  grid-row-end: span 2;
+display:none;
+  // grid-column: 3 / span 1;
+  // grid-row-end: span 2;
   @media screen and (max-width: ${breakpointLargeBlocks}) {
     max-width: 284px;
   }
 `
 
 export const GridItemTopSites = styled('section')`
-  grid-column: 1 / span 2;
+  // grid-column: 1 / span 2;
+  display:block !important;
   ${singleColumnSmallViewport}
 `
 

@@ -6,22 +6,22 @@ import * as React from 'react'
 
 // Feature-specific components
 import {
-  Label,
-  Link,
+  // Label,
+  // Link,
   Navigation,
   IconButton,
   IconButtonContainer,
   IconButtonSideText,
   IconLink,
-  PhotoName
+  // PhotoName
 } from '..'
 import * as S from '../page'
 
 // Items
 import {
   SettingsIcon,
-  SettingsAdvancedIcon,
-  BookmarkBook,
+  // SettingsAdvancedIcon,
+  // BookmarkBook,
   HistoryIcon
 } from 'brave-ui/components/icons'
 import BraveTalkItem from './braveTalkItem'
@@ -46,14 +46,14 @@ export default class FooterInfo extends React.PureComponent<Props, {}> {
     const {
       textDirection,
       supportsBraveTalk,
-      backgroundImageInfo,
-      showPhotoInfo,
+      // backgroundImageInfo,
+      // showPhotoInfo,
       onClickSettings
     } = this.props
 
     return (
       <>
-        { showPhotoInfo && backgroundImageInfo?.type === 'brave' &&
+        {/* { showPhotoInfo && backgroundImageInfo?.type === 'brave' &&
           <S.GridItemCredits>
             <PhotoName>
               {`${getLocale('photoBy')} `}
@@ -65,7 +65,7 @@ export default class FooterInfo extends React.PureComponent<Props, {}> {
               }
             </PhotoName>
           </S.GridItemCredits>
-        }
+        } */}
         <S.GridItemNavigation>
           <Navigation>
             <IconButtonContainer textDirection={textDirection}>
@@ -76,12 +76,12 @@ export default class FooterInfo extends React.PureComponent<Props, {}> {
                 {getLocale('customize')}
               </IconButtonSideText>
             </IconButtonContainer>
-            <IconLink title={getLocale('preferencesPageTitle')} href='chrome://settings'>
+            {/* <IconLink title={getLocale('preferencesPageTitle')} href='chrome://settings'>
               <SettingsAdvancedIcon />
             </IconLink>
             <IconLink title={getLocale('bookmarksPageTitle')} href='chrome://bookmarks'>
               <BookmarkBook />
-            </IconLink>
+            </IconLink> */}
             <IconLink title={getLocale('historyPageTitle')} href='chrome://history'>
               <HistoryIcon />
             </IconLink>
