@@ -5,6 +5,6 @@ PRODUCT_SHORTNAME=Halalz
 PRODUCT_INSTALLER_FULLNAME=Halalz Installer
 PRODUCT_INSTALLER_SHORTNAME=Halalz Installer
 COPYRIGHT=Copyright 2016 The Halalz Authors. All rights reserved.
-MAC_BUNDLE_ID=com.brave.Browser
+MAC_BUNDLE_ID=com.halalz.browser
 MAC_CREATOR_CODE=Cr24
 MAC_TEAM_ID=KL8N8XSYF4

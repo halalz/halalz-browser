@@ -239,7 +239,7 @@ public abstract class BraveActivity<C extends ChromeActivityComponent> extends C
     /**
      * Settings for sending local notification reminders.
      */
-    public static final String CHANNEL_ID = "com.brave.browser";
+    public static final String CHANNEL_ID = "com.halalz.browser";
 
     // Explicitly declare this variable to avoid build errors.
     // It will be removed in asm and parent variable will be used instead.
