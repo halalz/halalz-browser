@@ -640,7 +640,7 @@ class NewTabPage extends React.Component<Props, State> {
               </GridWidget>
               <StyledExploreButton className='btn-explore'>
                 <img style={{ width: "25px", height: "13px" }} src={Logo} alt="" />
-                <div className='inner-btnS' style={{ color: "white", }}>Explore Minego</div>
+                <div className='inner-btnS' style={{ color: "white", }}>Explore Halalz</div>
               </StyledExploreButton>
             </div>
 
