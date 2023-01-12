@@ -69,15 +69,15 @@
     <ph name="BOLD_BEGIN">$1</ph>Ready to start earning BAT?<ph name="BOLD_END">$2</ph> Just connect your custodial account to your Rewards profile. If you don’t have an account, you’ll get the chance to create one.
   </message>
   <message name="IDS_REWARDS_CONNECT_ACCOUNT_NO_PROVIDERS" desc="">
-    To earn BAT, users must connect a custodial account to Brave Rewards. Unfortunately, there's no custodian available in your region, so earning isn't available. For now, turning on Brave Rewards will automatically support creators.
+    To earn BAT, users must connect a custodial account to Halalz Rewards. Unfortunately, there's no custodian available in your region, so earning isn't available. For now, turning on Halalz Rewards will automatically support creators.
   </message>
   <message name="IDS_REWARDS_LEARN_MORE" desc="">
     Learn more
   </message>
   <message name="IDS_REWARDS_PUBLISHER_COUNT_TEXT" desc="">
     {PUBLISHER_COUNT, plural,
-      =1 {This month, you've visited # creator supported by Brave Rewards}
-      other {This month, you've visited # creators supported by Brave Rewards}
+      =1 {This month, you've visited # creator supported by Halalz Rewards}
+      other {This month, you've visited # creators supported by Halalz Rewards}
     }
   </message>
 
@@ -89,7 +89,7 @@
     Your <ph name="MONTH">$1<ex>January</ex></ph> Ad Rewards are here!
   </message>
   <message name="IDS_REWARDS_WIDGET_BRAVE_REWARDS" desc="">
-    Brave Rewards
+    Halalz Rewards
   </message>
   <message name="IDS_REWARDS_WIDGET_CLAIM_REWARDS" desc="">
     Claim Rewards
@@ -119,7 +119,7 @@
     Earn tokens and give back
   </message>
   <message name="IDS_REWARDS_WIDGET_OPT_IN_TEXT" desc="">
-    Earn tokens by viewing Brave Private Ads and support content creators automatically.
+    Earn tokens by viewing Halalz Private Ads and support content creators automatically.
   </message>
   <message name="IDS_REWARDS_WIDGET_PROGRESS" desc="">
     Progress
@@ -131,7 +131,7 @@
     Select your country
   </message>
   <message name="IDS_REWARDS_WIDGET_SELECT_COUNTRY_TEXT" desc="">
-    To continue using Brave Rewards, select your country so we can show you the right options and ads for your region. <ph name="LINK_BEGIN">$1</ph>Privacy Policy<ph name="LINK_END">$2</ph>
+    To continue using Halalz Rewards, select your country so we can show you the right options and ads for your region. <ph name="LINK_BEGIN">$1</ph>Privacy Policy<ph name="LINK_END">$2</ph>
   </message>
   <message name="IDS_REWARDS_WIDGET_SPONSORED_IMAGE_EARNING_TEXT" desc="">
     You’re earning tokens for viewing this sponsored image.
@@ -175,7 +175,7 @@
     You're connected to <ph name="USER_PROVIDER">$1<ex>Uphold</ex></ph>, but this creator is connected to <ph name="CREATOR_PROVIDER">$2<ex>Gemini</ex></ph>. This means your tip can't reach this creator.
   </message>
   <message name="IDS_REWARDS_PANEL_PLATFORM_PUBLISHER_TITLE" desc="">
-    <ph name="NAME">$1<ex>Brave</ex></ph> on <ph name="PLATFORM">$2<ex>Twitter</ex></ph>
+    <ph name="NAME">$1<ex>Halalz</ex></ph> on <ph name="PLATFORM">$2<ex>Twitter</ex></ph>
   </message>
   <message name="IDS_REWARDS_PANEL_ATTENTION" desc="">
     Attention
@@ -202,10 +202,10 @@
     Cancel
   </message>
   <message name="IDS_REWARDS_PANEL_ABOUT_REWARDS_TEXT" desc="">
-    Using Brave Rewards helps support content creators, and lets you earn BAT.
+    Using Halalz Rewards helps support content creators, and lets you earn BAT.
   </message>
   <message name="IDS_REWARDS_PANEL_HEADER_TITLE" desc="">
-    Brave Rewards
+    Halalz Rewards
   </message>
   <message name="IDS_REWARDS_PANEL_HEADER_TEXT_ADS_ENABLED" desc="">
     You are helping support content creators
@@ -255,7 +255,7 @@
     Oops, something is wrong. Please try again later.
   </message>
   <message name="IDS_REWARDS_GRANT_CAPTCHA_ERROR_TEXT" desc="">
-    Brave Rewards is having an issue. Please try again later.
+    Halalz Rewards is having an issue. Please try again later.
   </message>
 
   <!-- Rewards panel notifications -->
@@ -328,7 +328,7 @@
 
   <!-- Adaptive captcha -->
   <message name="IDS_REWARDS_CAPTCHA_MAX_ATTEMPTS_EXCEEDED_TEXT" desc="">
-    Looks like this is not working, Brave ads will remain paused. Contact us if you need help with the captcha.
+    Looks like this is not working, Halalz ads will remain paused. Contact us if you need help with the captcha.
   </message>
   <message name="IDS_REWARDS_CAPTCHA_MAX_ATTEMPTS_EXCEEDED_TITLE" desc="">
     Max attempts exceeded
@@ -337,7 +337,7 @@
     Solved!
   </message>
   <message name="IDS_REWARDS_CAPTCHA_SOLVED_TEXT" desc="">
-    Ads and earnings will now resume. Thanks for helping us protect Brave Rewards and privacy-based ads.
+    Ads and earnings will now resume. Thanks for helping us protect Halalz Rewards and privacy-based ads.
   </message>
   <message name="IDS_REWARDS_CAPTCHA_CONTACT_SUPPORT" desc="">
     Contact support
@@ -348,7 +348,7 @@
 
   <!-- Rewards onboarding tour -->
   <message name="IDS_BRAVE_REWARDS_ONBOARDING_BRAVE_REWARDS" desc="">
-    Brave Rewards
+    Halalz Rewards
   </message>
   <message name="IDS_BRAVE_REWARDS_ONBOARDING_CLOSE" desc="">
     Close
@@ -369,16 +369,16 @@
     Something went wrong
   </message>
   <message name="IDS_BRAVE_REWARDS_ONBOARDING_ERROR_HEADER_DISABLED" desc="">
-    Brave Rewards not available
+    Halalz Rewards not available
   </message>
   <message name="IDS_BRAVE_REWARDS_ONBOARDING_ERROR_TEXT" desc="">
-    Unfortunately, there was an error while trying to set up Brave Rewards. Please try again.
+    Unfortunately, there was an error while trying to set up Halalz Rewards. Please try again.
   </message>
   <message name="IDS_BRAVE_REWARDS_ONBOARDING_ERROR_TEXT_DECLARE_COUNTRY" desc="">
     Unfortunately, there was an error while trying to set your country. Please try again.
   </message>
   <message name="IDS_BRAVE_REWARDS_ONBOARDING_ERROR_TEXT_DISABLED" desc="">
-    New signups for Brave Rewards are currently disabled in your region. However, you can always try again later. <ph name="LINK_BEGIN">$1</ph>Learn more<ph name="LINK_END">$2</ph>
+    New signups for Halalz Rewards are currently disabled in your region. However, you can always try again later. <ph name="LINK_BEGIN">$1</ph>Learn more<ph name="LINK_END">$2</ph>
   </message>
   <message name="IDS_BRAVE_REWARDS_ONBOARDING_GEO_HEADER" desc="">
     Select your country
@@ -387,13 +387,13 @@
     Thank you!
   </message>
   <message name="IDS_BRAVE_REWARDS_ONBOARDING_GEO_SUCCESS_TEXT" desc="">
-    Your Brave Rewards region has been set to <ph name="COUNTRY">$1<ex>United States</ex></ph>.
+    Your Halalz Rewards region has been set to <ph name="COUNTRY">$1<ex>United States</ex></ph>.
   </message>
   <message name="IDS_BRAVE_REWARDS_ONBOARDING_GEO_TEXT" desc="">
     Select your country so we can show you the right options and ads for your region. <ph name="LINK_BEGIN">$1</ph>Privacy Policy<ph name="LINK_END">$2</ph>
   </message>
   <message name="IDS_BRAVE_REWARDS_ONBOARDING_GEO_TEXT_DECLARE_COUNTRY" desc="">
-    To continue using Brave Rewards, select your country so we can show you the right options and ads for your region. <ph name="LINK_BEGIN">$1</ph>Privacy Policy<ph name="LINK_END">$2</ph>
+    To continue using Halalz Rewards, select your country so we can show you the right options and ads for your region. <ph name="LINK_BEGIN">$1</ph>Privacy Policy<ph name="LINK_END">$2</ph>
   </message>
   <message name="IDS_BRAVE_REWARDS_ONBOARDING_MAYBE_LATER" desc="">
     Maybe Later
@@ -429,7 +429,7 @@
     You can change this later in settings.
   </message>
   <message name="IDS_BRAVE_REWARDS_ONBOARDING_START_USING_REWARDS" desc="">
-    Start using Brave Rewards
+    Start using Halalz Rewards
   </message>
   <message name="IDS_BRAVE_REWARDS_ONBOARDING_TAKE_TOUR" desc="">
     Take a quick tour
@@ -458,16 +458,16 @@
 
   <!-- Rewards onboarding tour panels -->
   <message name="IDS_BRAVE_REWARDS_ONBOARDING_PANEL_WELCOME_HEADER" desc="">
-    Welcome to Brave Rewards!
+    Welcome to Halalz Rewards!
   </message>
   <message name="IDS_BRAVE_REWARDS_ONBOARDING_PANEL_WELCOME_TEXT" desc="">
-    Brave Private Ads reward you with tokens to support content creators unlike traditional ads, all while keeping your personal information private.
+    Halalz Private Ads reward you with tokens to support content creators unlike traditional ads, all while keeping your personal information private.
   </message>
   <message name="IDS_BRAVE_REWARDS_ONBOARDING_PANEL_ADS_HEADER" desc="">
     Where do ads show up?
   </message>
   <message name="IDS_BRAVE_REWARDS_ONBOARDING_PANEL_ADS_TEXT" desc="">
-    Brave Private Ads appear as notifications on your screen. You control how often you see these ads.
+    Halalz Private Ads appear as notifications on your screen. You control how often you see these ads.
   </message>
   <message name="IDS_BRAVE_REWARDS_ONBOARDING_PANEL_AC_HEADER" desc="">
     Giving back made effortless
@@ -488,7 +488,7 @@
     Woohoo, you’re all set!
   </message>
   <message name="IDS_BRAVE_REWARDS_ONBOARDING_PANEL_COMPLETE_TEXT" desc="">
-    By using Brave Rewards you are helping make the web a better place for everyone. And that’s awesome!
+    By using Halalz Rewards you are helping make the web a better place for everyone. And that’s awesome!
   </message>
   <message name="IDS_BRAVE_REWARDS_ONBOARDING_PANEL_VERIFY_SUBTEXT" desc="">
     Connect a custodial account so you can earn BAT and withdraw your rewards
@@ -502,10 +502,10 @@
 
   <!-- Rewards unsupported region notice -->
   <message name="IDS_BRAVE_REWARDS_UNSUPPORTED_REGION_NOTICE_HEADER" desc="">
-    Sorry, Brave Rewards is not available
+    Sorry, Halalz Rewards is not available
   </message>
   <message name="IDS_BRAVE_REWARDS_UNSUPPORTED_REGION_NOTICE_SUBHEADER" desc="">
-    Unfortunately, it looks like you’re in a region where Brave Rewards is not available.
+    Unfortunately, it looks like you’re in a region where Halalz Rewards is not available.
   </message>
   <message name="IDS_BRAVE_REWARDS_UNSUPPORTED_REGION_NOTICE_LEARN_MORE" desc="">
     <ph name="LINK_BEGIN">$1</ph>Learn more<ph name="LINK_END">$2</ph>

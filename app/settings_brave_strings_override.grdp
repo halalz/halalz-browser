@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!-- Settings-specific Brave strings (included from chromium_strings.grd). -->
+<!-- Settings-specific Halalz strings (included from chromium_strings.grd). -->
 <grit-part>
   <if expr="not chromeos_ash">
     </if>
@@ -21,7 +21,7 @@
   </if>
   <if expr="chromeos_ash">
   <message name="IDS_SETTINGS_ACCOUNT_MANAGER_DESCRIPTION_V2" desc="Description of the Account Manager Settings page. Shown just below the title of the page.">
-    You can manage your signed-in Brave sync chains. Your Brave sync chains are used for Brave browser, Play Store, Gmail, and more. If you want to add an account for someone else, like a family member, add a new profile to your <ph name="DEVICE_TYPE">$1<ex>Chromebook</ex></ph> instead. <ph name="LINK_BEGIN">&lt;a&gt;</ph>Learn more<ph name="LINK_END">&lt;/a&gt;</ph>
+    You can manage your signed-in Halalz sync chains. Your Halalz sync chains are used for Halalz browser, Play Store, Gmail, and more. If you want to add an account for someone else, like a family member, add a new profile to your <ph name="DEVICE_TYPE">$1<ex>Chromebook</ex></ph> instead. <ph name="LINK_BEGIN">&lt;a&gt;</ph>Learn more<ph name="LINK_END">&lt;/a&gt;</ph>
   </message>
 </if>
 

@@ -77,13 +77,13 @@ export default class BoxMobile extends React.PureComponent<Props, State> {
   /*
    * Sets state given the view that should be shown.
    *
-   * When user is on the index page: (brave://rewards)
+   * When user is on the index page: (halalz://rewards)
    * (state) { detailView: false, settings: false }
    *
-   * When user is on a detail view: (brave://rewards/ads)
+   * When user is on a detail view: (halalz://rewards/ads)
    * (state) { detailView: true, settings: false }
    *
-   * When user is on a settings view: (brave://rewards/ads-settings)
+   * When user is on a settings view: (halalz://rewards/ads-settings)
    * (state) { detailView: true, settings: true }
    */
   setView = (view: string, updateHistory: boolean = true) => {

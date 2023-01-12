@@ -685,7 +685,7 @@ export const _ConnectedPanel = (args: { locked: boolean }) => {
   }
 
   const onAddAsset = () => {
-    alert('Will redirect to brave://wallet/crypto/portfolio/add-asset')
+    alert('Will redirect to halalz://wallet/crypto/portfolio/add-asset')
   }
 
   const onClickRetryTransaction = () => {

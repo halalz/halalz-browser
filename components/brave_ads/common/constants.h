@@ -15,7 +15,7 @@ namespace ads {
 // Brave Ads current version number
 constexpr int kCurrentVersionNumber = 12;
 
-// Brave Ads per hour are user configurable within the brave://rewards ads UI
+// Brave Ads per hour are user configurable within the halalz://rewards ads UI
 constexpr int64_t kMinimumNotificationAdsPerHour = 0;
 constexpr int64_t kMaximumNotificationAdsPerHour = 10;
 constexpr int64_t kDefaultNotificationAdsPerHour = 5;

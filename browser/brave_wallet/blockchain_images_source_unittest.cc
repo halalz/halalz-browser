@@ -71,10 +71,10 @@ class BlockchainImagesSourceTest : public testing::Test {
 };
 
 TEST_F(BlockchainImagesSourceTest, GetMimeType) {
-  EXPECT_EQ(source()->GetMimeType(GURL("brave://test/img1.png")), "image/png");
-  EXPECT_EQ(source()->GetMimeType(GURL("brave://test/img1.gif")), "image/gif");
-  EXPECT_EQ(source()->GetMimeType(GURL("brave://test/img1.jpg")), "image/jpg");
-  EXPECT_EQ(source()->GetMimeType(GURL("brave://test/img1.svg")),
+  EXPECT_EQ(source()->GetMimeType(GURL("halalz://test/img1.png")), "image/png");
+  EXPECT_EQ(source()->GetMimeType(GURL("halalz://test/img1.gif")), "image/gif");
+  EXPECT_EQ(source()->GetMimeType(GURL("halalz://test/img1.jpg")), "image/jpg");
+  EXPECT_EQ(source()->GetMimeType(GURL("halalz://test/img1.svg")),
             "image/svg+xml");
 }
 

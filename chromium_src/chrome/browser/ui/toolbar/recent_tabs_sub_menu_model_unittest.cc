@@ -17,7 +17,7 @@
   DISABLED_RecentlyClosedGroupsFromCurrentSession
 
 // Need to expect more items at that place, because Brave has additional item
-// `More...` which redirects to brave://history/syncedTabs
+// `More...` which redirects to halalz://history/syncedTabs
 #define BRAVE_MAX_TABS_PER_SESSION_AND_RECENCY \
   EXPECT_EQ(10u, model.GetItemCount());
 

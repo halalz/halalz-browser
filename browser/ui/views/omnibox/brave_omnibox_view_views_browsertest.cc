@@ -29,7 +29,7 @@ class BraveOmniboxViewViewsTest : public InProcessBrowserTest {
 
 // Load brave url and check copied url also has brave scheme.
 IN_PROC_BROWSER_TEST_F(BraveOmniboxViewViewsTest, CopyURLToClipboardTest) {
-  const std::string test_url("brave://version/");
+  const std::string test_url("halalz://version/");
   ASSERT_TRUE(ui_test_utils::NavigateToURL(browser(), GURL(test_url)));
 
   omnibox_view()->SelectAll(true);
@@ -74,7 +74,7 @@ IN_PROC_BROWSER_TEST_F(BraveOmniboxViewViewsTest, CopyCleanURLToClipboardTest) {
 }
 
 IN_PROC_BROWSER_TEST_F(BraveOmniboxViewViewsTest, DoNotSanitizeInternalURLS) {
-  const std::string test_url("brave://settings/?utm_ad=1");
+  const std::string test_url("halalz://settings/?utm_ad=1");
   ASSERT_TRUE(ui_test_utils::NavigateToURL(browser(), GURL(test_url)));
   brave::URLSanitizerServiceFactory::GetForBrowserContext(browser()->profile())
       ->Initialize(R"([
@@ -88,5 +88,5 @@ IN_PROC_BROWSER_TEST_F(BraveOmniboxViewViewsTest, DoNotSanitizeInternalURLS) {
   std::string text_from_clipboard;
   clipboard->ReadAsciiText(ui::ClipboardBuffer::kCopyPaste,
                            /* data_dst = */ nullptr, &text_from_clipboard);
-  EXPECT_EQ(text_from_clipboard, "brave://settings/?utm_ad=1");
+  EXPECT_EQ(text_from_clipboard, "halalz://settings/?utm_ad=1");
 }

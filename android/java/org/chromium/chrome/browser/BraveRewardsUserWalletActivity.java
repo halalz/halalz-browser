@@ -29,7 +29,7 @@ import org.chromium.ledger.mojom.WalletStatus;
 
 public class BraveRewardsUserWalletActivity extends AsyncInitializationActivity {
     private static final String TAG = "BraveRewards";
-    public static final String DISCONNECT_WALLET_URL = "brave://rewards/#disconnect-wallet";
+    public static final String DISCONNECT_WALLET_URL = "halalz://rewards/#disconnect-wallet";
     public static final int UNDEFINED_WALLET_STATUS = -1;
 
     private String walletType = BraveRewardsNativeWorker.getInstance().getExternalWalletType();

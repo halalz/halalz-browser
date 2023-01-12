@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <grit-part>
   <if expr="enable_speedreader">
-    <message name="IDS_SPEEDREADER_BRAND_LABEL" desc="Used in places to show brand title">Brave Speedreader</message>
+    <message name="IDS_SPEEDREADER_BRAND_LABEL" desc="Used in places to show brand title">Halalz Speedreader</message>
     <message name="IDS_SPEEDREADER_BRAND_LABEL_2" desc="Used in places to show brand title"> Speedreader</message>
     <message name="IDS_SPEEDREADER_ALWAYS_LOAD_LABEL" desc="Used for a checkbox label">Always load speedreader mode for <ph name="HOST_NAME">$1</ph></message>
     <message name="IDS_SPEEDREADER_THEME_LABEL" desc="Title for changing current page's theme">Theme</message>

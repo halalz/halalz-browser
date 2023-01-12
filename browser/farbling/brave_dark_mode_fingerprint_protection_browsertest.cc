@@ -185,7 +185,7 @@ IN_PROC_BROWSER_TEST_F(BraveDarkModeFingerprintProtectionTest,
   SetDarkMode(true);
 
   BlockFingerprinting();
-  NavigateToURLUntilLoadStop(GURL("brave://settings"));
+  NavigateToURLUntilLoadStop(GURL("halalz://settings"));
   ASSERT_TRUE(IsReportingDarkMode());
 }
 

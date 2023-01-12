@@ -21,7 +21,7 @@ IN_PROC_BROWSER_TEST_F(BraveSesstionRestoreBrowserTest, Serialization) {
   SessionService* const session_service =
       SessionServiceFactory::GetForProfile(browser()->profile());
   ui_test_utils::NavigateToURLBlockUntilNavigationsComplete(
-      browser(), GURL("brave://newtab/"), 1);
+      browser(), GURL("halalz://newtab/"), 1);
   ASSERT_TRUE(EvalJs(web_contents,
                      R"(
         var textarea = document.createElement('textarea')

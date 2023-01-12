@@ -8,7 +8,7 @@
   </outputs>
   <release seq="1">
     <includes>
-      <!-- WebUI Brave Rewards Page resources -->
+      <!-- WebUI Halalz Rewards Page resources -->
       <if expr="is_android">
         <then>
           <include name="IDR_BRAVE_REWARDS_PAGE_HTML" file="page/brave_rewards_page_android.html" type="BINDATA" />
@@ -19,11 +19,11 @@
       </if>
       <include name="IDR_BRAVE_REWARDS_FAVICON" file="page/assets/favicon.ico" type="BINDATA" />
 
-      <!-- WebUI Brave Rewards Internals resources -->
+      <!-- WebUI Halalz Rewards Internals resources -->
       <include name="IDR_BRAVE_REWARDS_INTERNALS_HTML" file="internals/brave_rewards_internals.html" type="BINDATA" />
 
       <if expr="not is_android">
-        <!-- WebUI Brave Rewards Tip resources -->
+        <!-- WebUI Halalz Rewards Tip resources -->
         <include name="IDR_BRAVE_REWARDS_TIP_HTML" file="tip/index.html" type="BINDATA" />
         <include name="IDR_BRAVE_REWARDS_PANEL_HTML" file="rewards_panel/index.html" type="BINDATA" />
       </if>

@@ -49,7 +49,7 @@ TEST(BatAdsUrlUtilTest, FooBarSchemeIsNotSupported) {
 
 TEST(BatAdsUrlUtilTest, BraveSchemeWithFooBarHostNameIsNotSupported) {
   // Arrange
-  const GURL url = GURL("brave://foobar");
+  const GURL url = GURL("halalz://foobar");
 
   // Act
   const bool is_supported = SchemeIsSupported(url);
@@ -60,7 +60,7 @@ TEST(BatAdsUrlUtilTest, BraveSchemeWithFooBarHostNameIsNotSupported) {
 
 TEST(BatAdsUrlUtilTest, BraveSchemeWithWalletHostNameIsSupported) {
   // Arrange
-  const GURL url = GURL("brave://wallet");
+  const GURL url = GURL("halalz://wallet");
 
   // Act
   const bool is_supported = SchemeIsSupported(url);
@@ -71,7 +71,7 @@ TEST(BatAdsUrlUtilTest, BraveSchemeWithWalletHostNameIsSupported) {
 
 TEST(BatAdsUrlUtilTest, BraveSchemeWithWalletHostNameAndPathIsSupported) {
   // Arrange
-  const GURL url = GURL("brave://wallet/foo");
+  const GURL url = GURL("halalz://wallet/foo");
 
   // Act
   const bool is_supported = SchemeIsSupported(url);
@@ -82,7 +82,7 @@ TEST(BatAdsUrlUtilTest, BraveSchemeWithWalletHostNameAndPathIsSupported) {
 
 TEST(BatAdsUrlUtilTest, BraveSchemeWithSyncHostNameIsSupported) {
   // Arrange
-  const GURL url = GURL("brave://sync");
+  const GURL url = GURL("halalz://sync");
 
   // Act
   const bool is_supported = SchemeIsSupported(url);
@@ -93,7 +93,7 @@ TEST(BatAdsUrlUtilTest, BraveSchemeWithSyncHostNameIsSupported) {
 
 TEST(BatAdsUrlUtilTest, BraveSchemeWithSyncHostNameAndPathIsSupported) {
   // Arrange
-  const GURL url = GURL("brave://sync/foo");
+  const GURL url = GURL("halalz://sync/foo");
 
   // Act
   const bool is_supported = SchemeIsSupported(url);
@@ -104,7 +104,7 @@ TEST(BatAdsUrlUtilTest, BraveSchemeWithSyncHostNameAndPathIsSupported) {
 
 TEST(BatAdsUrlUtilTest, BraveSchemeWithRewardsHostNameIsSupported) {
   // Arrange
-  const GURL url = GURL("brave://rewards");
+  const GURL url = GURL("halalz://rewards");
 
   // Act
   const bool is_supported = SchemeIsSupported(url);
@@ -115,7 +115,7 @@ TEST(BatAdsUrlUtilTest, BraveSchemeWithRewardsHostNameIsSupported) {
 
 TEST(BatAdsUrlUtilTest, BraveSchemeWithRewardsHostNameAndPathIsSupported) {
   // Arrange
-  const GURL url = GURL("brave://rewards/foo");
+  const GURL url = GURL("halalz://rewards/foo");
 
   // Act
   const bool is_supported = SchemeIsSupported(url);
@@ -127,7 +127,7 @@ TEST(BatAdsUrlUtilTest, BraveSchemeWithRewardsHostNameAndPathIsSupported) {
 TEST(BatAdsUrlUtilTest,
      BraveSchemeWithSettingsHostNameAndSearchEnginesPathIsSupported) {
   // Arrange
-  const GURL url = GURL("brave://settings/searchEngines");
+  const GURL url = GURL("halalz://settings/searchEngines");
 
   // Act
   const bool is_supported = SchemeIsSupported(url);
@@ -139,7 +139,7 @@ TEST(BatAdsUrlUtilTest,
 TEST(BatAdsUrlUtilTest,
      BraveSchemeWithSettingsHostNameAndSearchPathIsSupported) {
   // Arrange
-  const GURL url = GURL("brave://settings/search");
+  const GURL url = GURL("halalz://settings/search");
 
   // Act
   const bool is_supported = SchemeIsSupported(url);
@@ -151,7 +151,7 @@ TEST(BatAdsUrlUtilTest,
 TEST(BatAdsUrlUtilTest,
      BraveSchemeWithSettingsHostNameAndFooBarPathIsNotSupported) {
   // Arrange
-  const GURL url = GURL("brave://settings/foobar");
+  const GURL url = GURL("halalz://settings/foobar");
 
   // Act
   const bool is_supported = SchemeIsSupported(url);
@@ -162,7 +162,7 @@ TEST(BatAdsUrlUtilTest,
 
 TEST(BatAdsUrlUtilTest, BraveSchemeWithSettingsHostNameIsNotSupported) {
   // Arrange
-  const GURL url = GURL("brave://settings");
+  const GURL url = GURL("halalz://settings");
 
   // Act
   const bool is_supported = SchemeIsSupported(url);
@@ -173,7 +173,7 @@ TEST(BatAdsUrlUtilTest, BraveSchemeWithSettingsHostNameIsNotSupported) {
 
 TEST(BatAdsUrlUtilTest, MalformedUrlIsNotSupported) {
   // Arrange
-  const GURL url = GURL("http://foobar.com/brave://wallet");
+  const GURL url = GURL("http://foobar.com/halalz://wallet");
 
   // Act
   const bool is_supported = SchemeIsSupported(url);

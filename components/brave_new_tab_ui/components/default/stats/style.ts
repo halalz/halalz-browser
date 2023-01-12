@@ -15,7 +15,7 @@ export const StyledStatsItemContainer = styled('ul')<{}>`
   padding: 0;
   color: inherit;
   font-size: inherit;
-  font-family: inherit;
+  font-family: inherit;/
 `
 
 export const StyledStatsItem = styled('li')<{}>`

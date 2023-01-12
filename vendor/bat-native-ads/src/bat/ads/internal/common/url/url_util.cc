@@ -49,8 +49,8 @@ bool SchemeIsSupported(const GURL& url) {
     return true;
   }
 
-  // We must replace the brave:// host with chrome:// due to GURL not correctly
-  // parsing brave:// hosts.
+  // We must replace the halalz:// host with chrome:// due to GURL not correctly
+  // parsing halalz:// hosts.
   const GURL modified_url = ReplaceUrlBraveHostWithChromeHost(url);
 
   if (!modified_url.SchemeIs(kChromeScheme)) {

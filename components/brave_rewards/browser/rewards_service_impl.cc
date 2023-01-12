@@ -228,7 +228,7 @@ net::NetworkTrafficAnnotationTag GetNetworkTrafficAnnotationTagForURLLoad() {
         cookies_allowed: NO
         setting:
           "You can enable or disable this feature via the BAT icon in the URL "
-          "bar or by visiting brave://rewards/."
+          "bar or by visiting halalz://rewards/."
         policy_exception_justification:
           "Not implemented."
       })");

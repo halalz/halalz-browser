@@ -110,7 +110,7 @@ IN_PROC_BROWSER_TEST_P(BraveWalletPolicyTest, AppMenuItemDisabled) {
   }
 }
 
-// Verify that brave://wallet page isn't reachable when Brave Wallet is
+// Verify that halalz://wallet page isn't reachable when Brave Wallet is
 // disabled by policy.
 IN_PROC_BROWSER_TEST_P(BraveWalletPolicyTest, WalletPageAccess) {
   const GURL url("chrome://wallet");

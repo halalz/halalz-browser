@@ -6,20 +6,28 @@
 import styled from 'styled-components'
 
 export const StyledClock = styled('div')<{}>`
-  color: var(--override-readability-color, #FFFFFF);
+  color:"white";
   box-sizing: border-box;
   line-height: 1;
   user-select: none;
   display: flex;
   -webkit-font-smoothing: antialiased;
-  font-family: ${p => p.theme.fontFamily.heading};
+ font-family: 'Abhaya Libre', serif;
+  position:absolute;
+  left:50px;
+  top:50px;
+font-face{
+  font-family: 'Abhaya Libre', serif;
+  src: url(https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap);
+
+}
 `
 
 export const StyledTime = styled('span')<{}>`
   box-sizing: border-box;
   font-size: 78px;
   font-weight: 300;
-  color: inherit;
+  color: white;
   display: inline-flex;
 `
 
@@ -31,3 +39,5 @@ export const StyledTimeSeparator = styled('span')<{}>`
   /* center colon vertically in the text-content line */
   margin-top: -0.1em;
 `
+
+

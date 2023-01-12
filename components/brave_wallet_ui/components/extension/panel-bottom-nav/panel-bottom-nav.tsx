@@ -35,7 +35,7 @@ export const PanelBottomNav = (props: Props) => {
       onNavigate('transactions')
       return
     }
-    const url = `brave://wallet${option.route}`
+    const url = `halalz://wallet${option.route}`
     chrome.tabs.create({ url: url }, () => {
       if (chrome.runtime.lastError) {
         console.error('tabs.create failed: ' + chrome.runtime.lastError.message)

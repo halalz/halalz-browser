@@ -87,7 +87,7 @@ std::unique_ptr<DebounceNavigationThrottle>
 DebounceNavigationThrottle::MaybeCreateThrottleFor(
     NavigationHandle* navigation_handle,
     DebounceService* debounce_service) {
-  // If debouncing is disabled in brave://flags, debounce service will
+  // If debouncing is disabled in halalz://flags, debounce service will
   // never be created (will be null) so we won't create the throttle
   // either. Caller must nullcheck this.
   if (!debounce_service)

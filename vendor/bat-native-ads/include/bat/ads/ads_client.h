@@ -122,7 +122,7 @@ class ADS_EXPORT AdsClient {
   virtual void RunDBTransaction(mojom::DBTransactionInfoPtr transaction,
                                 RunDBTransactionCallback callback) = 0;
 
-  // Called to update brave://rewards.
+  // Called to update halalz://rewards.
   virtual void UpdateAdRewards() = 0;
 
   // Record a P2A (Privacy Preserving Anonymous) event with |base::Value::List|

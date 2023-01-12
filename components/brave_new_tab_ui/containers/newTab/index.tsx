@@ -19,7 +19,12 @@ import * as Page from '../../components/default/page'
 import { SponsoredImageTooltip } from '../../components/default/rewards'
 import TopSitesGrid from './gridSites'
 import SiteRemovalNotification from './notification'
-import Stats from './stats'
+// import Stats from './stats'
+import "./index.scss"
+import { InputContainer, InputLeftIcon, InputSearchBox, StyledExploreButton } from './indexStyle';
+import {GreetingContainer,GreetingFirstChild,GreetingSecondChild} from "./indexStyle"
+import Logo from "../../Minigo_Assets/Path.png"
+import SearchIcons from "../../Minigo_Assets/search.png"
 
 // Helpers
 import isReadableOnBackground from '../../helpers/colorUtil'
@@ -597,25 +602,46 @@ class NewTabPage extends React.Component<Props, State> {
             showTopSites={showTopSites}
             showBrandedWallpaper={isShowingBrandedWallpaper}
         >
-          {this.renderSearchPromotion()}
-          <GridWidget
+            {this.renderSearchPromotion()} 
+            <div style={{display:"flex"}}>
+            <GridWidget
             pref='showStats'
             container={Page.GridItemStats}
             paddingType={'right'}
             widgetTitle={getLocale('statsTitle')}
             textDirection={newTabData.textDirection}
-            menuPosition={'right'}>
-            <Stats stats={newTabData.stats}/>
-          </GridWidget>
-          <GridWidget
+              menuPosition={'right'}>
+              <Clock />
+            
+              </GridWidget>
+             
+            </div>
+         
+          {/* <GridWidget
             pref='showClock'
             container={Page.GridItemClock}
             paddingType='right'
             widgetTitle={getLocale('clockTitle')}
             textDirection={newTabData.textDirection}
-            menuPosition='left'>
-            <Clock />
-          </GridWidget>
+            menuPosition='left'> */}
+            <StyledExploreButton className='btn-explore'>
+              <img style={{ width: "25px",height:"13px"}} src={Logo} alt="" />
+              <div className='inner-btnS' style={{ color: "white" }}>Explore Minigo</div>
+            </StyledExploreButton>
+            {/* <Stats stats={newTabData.stats}/> */}
+            {/* </GridWidget> */}
+
+            <GreetingContainer className='greeting'>
+              <GreetingFirstChild className="first">Hello Again</GreetingFirstChild>
+              <GreetingSecondChild className="second">Its Good to See you here</GreetingSecondChild>
+              
+            </GreetingContainer>
+            <InputContainer>
+              <InputLeftIcon><img src={SearchIcons}  /></InputLeftIcon>
+              <InputSearchBox placeholder='Search...'>
+              
+              </InputSearchBox>
+            </InputContainer>
           {
             showTopSites &&
               <Page.GridItemTopSites>

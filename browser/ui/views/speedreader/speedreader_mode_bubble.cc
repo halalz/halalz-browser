@@ -181,7 +181,7 @@ void SpeedreaderModeBubble::OnButtonPressed(const ui::Event& event) {
 void SpeedreaderModeBubble::OnLinkClicked(const ui::Event& event) {
   auto label = l10n_util::GetStringUTF8(IDS_SETTINGS_SPEEDREADER_LABEL);
   tab_helper_->web_contents()->OpenURL(content::OpenURLParams(
-      GURL("brave://settings?search=" + label), content::Referrer(),
+      GURL("halalz://settings?search=" + label), content::Referrer(),
       WindowOpenDisposition::NEW_FOREGROUND_TAB, ui::PAGE_TRANSITION_LINK,
       false));
 }

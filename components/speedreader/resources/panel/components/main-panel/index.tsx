@@ -30,7 +30,7 @@ function MainContent (props: MainPanelProps) {
       <>
       <S.Section>
         {braveSpeedreaderOffText.beforeTag}
-        <a href="brave://settings/">{braveSpeedreaderOffText.duringTag}</a>
+        <a href="halalz://settings/">{braveSpeedreaderOffText.duringTag}</a>
         {braveSpeedreaderOffText.afterTag}
       </S.Section>
       <S.Bg><BackgroundSVG /></S.Bg>

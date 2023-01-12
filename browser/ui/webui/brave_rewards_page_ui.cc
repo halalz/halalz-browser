@@ -517,8 +517,8 @@ void RewardsDOMHandler::Init() {
       brave_rewards::RewardsServiceFactory::GetForProfile(profile);
   ads_service_ = brave_ads::AdsServiceFactory::GetForProfile(profile);
 
-  // Configure a pref change registrar to update brave://rewards when settings
-  // are changed via brave://settings
+  // Configure a pref change registrar to update halalz://rewards when settings
+  // are changed via halalz://settings
   InitPrefChangeRegistrar();
 }
 

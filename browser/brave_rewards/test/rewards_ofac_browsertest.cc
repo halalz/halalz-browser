@@ -100,7 +100,7 @@ IN_PROC_BROWSER_TEST_F(BraveRewardsOFACTest, AppMenuItemEnabled) {
   }
 }
 
-// Verify that brave://rewards page is reachable even when  in an OFAC
+// Verify that halalz://rewards page is reachable even when  in an OFAC
 // sanctioned region.
 IN_PROC_BROWSER_TEST_F(BraveRewardsOFACTest, RewardsPagesAccess) {
   const GURL url("chrome://rewards");

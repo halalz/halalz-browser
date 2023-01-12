@@ -35,13 +35,13 @@ const net::NetworkTrafficAnnotationTag
           sender: "Brave Shields"
           description:
             "Brave periodically downloads updates to third-party filter lists "
-            "added by users on brave://adblock."
+            "added by users on halalz://adblock."
           trigger:
-            "After being registered in brave://adblock, any enabled filter "
+            "After being registered in halalz://adblock, any enabled filter "
             "list subscriptions will be updated in accordance with their "
             "`Expires` field if present, or daily otherwise. A manual refresh "
-            "for a particular list can also be triggered in brave://adblock."
-          data: "The URL endpoint provided by the user in brave://adblock to "
+            "for a particular list can also be triggered in halalz://adblock."
+          data: "The URL endpoint provided by the user in halalz://adblock to "
             "fetch list updates from. No user information is sent."
           destination: BRAVE_OWNED_SERVICE
         }
@@ -50,7 +50,7 @@ const net::NetworkTrafficAnnotationTag
           setting:
             "This request cannot be disabled in settings. However it will "
             "never be made if the corresponding entry is removed from the "
-            "brave://adblock page's custom list subscription section."
+            "halalz://adblock page's custom list subscription section."
           policy_exception_justification: "Not yet implemented."
         })");
 

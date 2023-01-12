@@ -15,11 +15,11 @@ Public facing documentation can be found in `components/brave_ads/browser/ads_se
 
 ## Logs
 
-You can enable diagnostic logging to the `Rewards.log` file stored on your device; see [Brave Rewards](brave://flags/#brave-rewards-verbose-logging). View this log file on the `Logs` tab at [rewards internals](brave://rewards-internals).
+You can enable diagnostic logging to the `Rewards.log` file stored on your device; see [Brave Rewards](halalz://flags/#brave-rewards-verbose-logging). View this log file on the `Logs` tab at [rewards internals](halalz://rewards-internals).
 
 ## Diagnostics
 
-View diagnostics at [rewards internals](brave://rewards-internals) on the `Ad diagnostics` tab.
+View diagnostics at [rewards internals](halalz://rewards-internals) on the `Ad diagnostics` tab.
 
 ## Browser Tests
 

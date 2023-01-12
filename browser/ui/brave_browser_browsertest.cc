@@ -34,7 +34,7 @@ Browser* OpenNewBrowser(Profile* profile) {
 }  // namespace
 
 IN_PROC_BROWSER_TEST_F(BraveBrowserBrowserTest, NTPFaviconTest) {
-  ASSERT_TRUE(ui_test_utils::NavigateToURL(browser(), GURL("brave://newtab/")));
+  ASSERT_TRUE(ui_test_utils::NavigateToURL(browser(), GURL("halalz://newtab/")));
 
   auto* tab_model = browser()->tab_strip_model();
   EXPECT_FALSE(

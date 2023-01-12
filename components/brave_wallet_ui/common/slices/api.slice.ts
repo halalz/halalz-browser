@@ -312,7 +312,7 @@ export function createWalletApi (
             // Get all networks
             const filteredSupportedCoinTypes = SupportedCoinTypes.filter(
               (coin) => {
-                // FIL and SOL networks, unless enabled by brave://flags
+                // FIL and SOL networks, unless enabled by halalz://flags
                 return (
                   (coin === BraveWallet.CoinType.FIL && isFilecoinEnabled) ||
                   (coin === BraveWallet.CoinType.SOL && isSolanaEnabled) ||

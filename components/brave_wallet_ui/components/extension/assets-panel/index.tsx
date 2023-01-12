@@ -37,7 +37,7 @@ const AssetsPanel = (props: Props) => {
   } = props
 
   const onClickAsset = (symbol: string) => () => {
-    const url = `brave://wallet${WalletRoutes.Portfolio}/${symbol}`
+    const url = `halalz://wallet${WalletRoutes.Portfolio}/${symbol}`
     chrome.tabs.create({ url: url }, () => {
       if (chrome.runtime.lastError) {
         console.error('tabs.create failed: ' + chrome.runtime.lastError.message)

@@ -105,7 +105,7 @@ function HelpImprove () {
           </Button>
           <S.FootNote>
             {changeSettingsNote.beforeTag}
-            <a href="brave://settings/privacy" onClick={handleOpenSettingsPage}>
+            <a href="halalz://settings/privacy" onClick={handleOpenSettingsPage}>
               {changeSettingsNote.duringTag}
             </a>
             {changeSettingsNote.afterTag}

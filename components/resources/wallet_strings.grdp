@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <grit-part>
-  <message name="IDS_TOOLTIP_WALLET" desc="Tooltip to acccess the Brave Wallet">Wallet</message>
-  <message name="IDS_ACCNAME_BRAVE_WALLET_BUTTON" desc="The accessible name for the Brave Wallet bubble.">Brave Wallet</message>
-  <message name="IDS_BRAVE_WALLET" desc="The name of the feature Brave Wallet">Brave Wallet</message>
+  <message name="IDS_TOOLTIP_WALLET" desc="Tooltip to acccess the Halalz Wallet">Wallet</message>
+  <message name="IDS_ACCNAME_BRAVE_WALLET_BUTTON" desc="The accessible name for the Halalz Wallet bubble.">Halalz Wallet</message>
+  <message name="IDS_BRAVE_WALLET" desc="The name of the feature Halalz Wallet">Halalz Wallet</message>
   <message name="IDS_WALLET_USER_REJECTED_REQUEST" desc="The text of the response for brave provider call if the user rejected the request">The user rejected the request.</message>
   <message name="IDS_WALLET_INVALID_PARAMETERS" desc="The call was made with invalid parameters">Invalid parameters.</message>
   <message name="IDS_WALLET_UNKNOWN_CHAIN" desc="The text of the response for wallet_switchEthereumChain call with unknown">Chain <ph name="VALUE">$1<ex>1</ex></ph> hasn't been added</message>
@@ -13,7 +13,7 @@
   <message name="IDS_WALLET_METHOD_NOT_SUPPORTED_ERROR" desc="The text of response when an RPC method is not supported">This RPC method is not supported.</message>
   <message name="IDS_WALLET_PARSING_ERROR" desc="There was a parsing error">A response parsing error has occurred</message>
   <message name="IDS_WALLET_REQUEST_PROCESSING_ERROR" desc="There was a request processing error">A generic request processing error has occurred</message>
-  <message name="IDS_WALLET_INVALID_MNEMONIC_ERROR" desc="The text for invalid mnemonic being imported error">The mnemonic being imported is not valid for Brave Wallet</message>
+  <message name="IDS_WALLET_INVALID_MNEMONIC_ERROR" desc="The text for invalid mnemonic being imported error">The mnemonic being imported is not valid for Halalz Wallet</message>
   <message name="IDS_WALLET_ALREADY_IN_PROGRESS_ERROR" desc="The text of the response for wallet_(add|switch)EthereumChain call for existing request">A request is already in progress</message>
   <message name="IDS_WALLET_ETH_SEND_TRANSACTION_NO_TX_DATA" desc="The text of the response for eth_sendTransaction">Transaction data is missing</message>
   <message name="IDS_WALLET_ETH_SEND_TRANSACTION_FROM_NOT_AUTHED" desc="The text of the response for eth_sendTransaction">'from' is not authorized to send transactions</message>
@@ -104,7 +104,7 @@
   <message name="IDS_BRAVE_WALLET_BUY_NOT_SUPPORTED_TOOLTIP" desc="Tooltip text when buy action is not supported">Buy support is not available for <ph name="NETWORK"><ex>Binance Smart Chain</ex>$1</ph></message>
   <message name="IDS_BRAVE_WALLET_BUY_TAB_BUY_NOT_SUPPORTED_MESSAGE" desc="Message shown when the selected network is not supported for buy transactions">Buy not supported for selected network</message>
   <message name="IDS_BRAVE_WALLET_SEARCHING_FOR_DOMAIN" desc="Message shown when searching for a UD or ENS domain">Searching for domain...</message>
-  <message name="IDS_BRAVE_WALLET_ENS_OFF_CHAIN_LOOKUP_TITLE" desc="Message title shown when requesting to do an ENS off chain lookup.">Brave supports using off-chain gateways to resolve .eth domains.</message>
+  <message name="IDS_BRAVE_WALLET_ENS_OFF_CHAIN_LOOKUP_TITLE" desc="Message title shown when requesting to do an ENS off chain lookup.">Halalz supports using off-chain gateways to resolve .eth domains.</message>
   <message name="IDS_BRAVE_WALLET_ENS_OFF_CHAIN_LOOKUP_DESCRIPTION" desc="Message description shown when requesting to do an ENS off chain lookup.">It looks like you've entered an ENS address. We'll need to use a third-party resolver to resolve this request, which may be able to see your IP address and domain.</message>
   <message name="IDS_BRAVE_WALLET_ENS_OFF_CHAIN_BUTTON" desc="ENS off chain lookup button text.">Use ENS domain</message>
   <message name="IDS_BRAVE_WALLET_SWAP_NOT_SUPPORTED_TOOLTIP" desc="Tooltip text when swap action is not supported">Swap support is not available for <ph name="NETWORK"><ex>Binance Smart Chain</ex>$1</ph></message>
@@ -113,10 +113,10 @@
   <message name="IDS_BRAVE_WALLET_EXPIRES_IN_TITLE" desc="BuySendSwap expires in title">Expires in</message>
   <message name="IDS_BRAVE_WALLET_SEND_PLACEHOLDER" desc="BuySendSwap send placeholder">Wallet address or URL</message>
   <message name="IDS_BRAVE_WALLET_SEND_NO_URL_PLACEHOLDER" desc="BuySendSwap send placeholder without URL">Wallet address</message>
-  <message name="IDS_BRAVE_WALLET_SWAP_DISCLAIMER" desc="Swap Security and Privacy Disclaimer">Brave uses <ph name="LINK_BEFORE">$1</ph><ph name="SWAP_PROVIDER">$3</ph><ph name="LINK_AFTER">$2</ph> as a DEX aggregator.</message>
+  <message name="IDS_BRAVE_WALLET_SWAP_DISCLAIMER" desc="Swap Security and Privacy Disclaimer">Halalz uses <ph name="LINK_BEFORE">$1</ph><ph name="SWAP_PROVIDER">$3</ph><ph name="LINK_AFTER">$2</ph> as a DEX aggregator.</message>
   <message name="IDS_BRAVE_WALLET_SWAP_DISCLAIMER_DESCRIPTION" desc="Swap 0x Security and Privacy Disclaimer Description">0x will process the Ethereum address and IP address to fulfill a transaction (including getting quotes). 0x will ONLY use this data for the purposes of processing transactions.</message>
   <message name="IDS_BRAVE_WALLET_JUPITER_SWAP_DISCLAIMER_DESCRIPTION" desc="Swap Jupiter Security and Privacy Disclaimer Description">Jupiter will process the Solana address and IP address to fulfill a transaction (including getting quotes). Jupiter will ONLY use this data for the purposes of processing transactions.</message>
-  <message name="IDS_BRAVE_WALLET_SWAP_FEES_NOTICE" desc="Swap fees notice">Quote includes a <ph name="SWAP_FEE_PERCENTAGE">$1</ph> Brave fee.</message>
+  <message name="IDS_BRAVE_WALLET_SWAP_FEES_NOTICE" desc="Swap fees notice">Quote includes a <ph name="SWAP_FEE_PERCENTAGE">$1</ph> Halalz fee.</message>
   <message name="IDS_BRAVE_WALLET_DECIMAL_PLACES_ERROR" desc="Amount decimal places error">Too many decimal places</message>
   <message name="IDS_BRAVE_WALLET_CREATE_ACCOUNT_DESCRIPTION" desc="Create Account Tab Description">You don’t yet have a <ph name="ACCOUNT_TYPE"><ex>Solana</ex>$1</ph> account. Create one now?</message>
   <message name="IDS_BRAVE_WALLET_CREATE_ACCOUNT_YES" desc="Create Account Tab Yes Button">Yes</message>
@@ -130,7 +130,7 @@
   <message name="IDS_BRAVE_WALLET_BUTTON_CLOSE" desc="General Close button">Close</message>
   <message name="IDS_BRAVE_WALLET_BUTTON_MORE" desc="General More button">More</message>
   <message name="IDS_BRAVE_WALLET_BUTTON_DONE" desc="General Done button">Done</message>
-  <message name="IDS_BRAVE_WALLET_WELCOME_TITLE" desc="Onboarding welcome screen title">Secure. Multi-chain. And oh-so-easy to use. Your Brave Wallet is just a few clicks away</message>
+  <message name="IDS_BRAVE_WALLET_WELCOME_TITLE" desc="Onboarding welcome screen title">Secure. Multi-chain. And oh-so-easy to use. Your Halalz Wallet is just a few clicks away</message>
   <message name="IDS_BRAVE_WALLET_WELCOME_RESTORE_BUTTON" desc="Restore screen button">Restore</message>
   <message name="IDS_BRAVE_WALLET_WELCOME_BUTTON" desc="Onboarding get started button">Create new wallet</message>
   <message name="IDS_BRAVE_WALLET_IMPORT_EXISTING_WALLET" desc="Wallet onboarding welcome import wallet button">Import existing wallet</message>
@@ -167,20 +167,20 @@
   <message name="IDS_BRAVE_WALLET_BACKUP_WARNING_TEXT" desc="Backup warning banner description">Back up your wallet now to protect your assets and ensure you never lose access.</message>
   <message name="IDS_BRAVE_WALLET_BACKUP_BUTTON" desc="Backup warning banner back up button">Back up now</message>
   <message name="IDS_BRAVE_WALLET_DISMISS_BUTTON" desc="Backup warning banner dismiss button">Dismiss</message>
-  <message name="IDS_BRAVE_WALLET_DEFAULT_WALLET_BANNER" desc="Default wallet banner description">Brave Wallet is not set as your default wallet and will not respond to Web3 DApps. Visit settings to change your default wallet.</message>
+  <message name="IDS_BRAVE_WALLET_DEFAULT_WALLET_BANNER" desc="Default wallet banner description">Halalz Wallet is not set as your default wallet and will not respond to Web3 DApps. Visit settings to change your default wallet.</message>
   <message name="IDS_BRAVE_WALLET_RESTORE_TITE" desc="Restore Wallet screen title">Restore primary crypto accounts</message>
-  <message name="IDS_BRAVE_WALLET_RESTORE_DESCRIPTION" desc="Restore Wallet screen description">Enter your recovery phrase to restore your Brave wallet crypto account.</message>
+  <message name="IDS_BRAVE_WALLET_RESTORE_DESCRIPTION" desc="Restore Wallet screen description">Enter your recovery phrase to restore your Halalz wallet crypto account.</message>
   <message name="IDS_BRAVE_WALLET_RESTORE_ERROR" desc="Restore Wallet screen recovery error">The recovery phrase entered is invalid.</message>
   <message name="IDS_BRAVE_WALLET_RESTORE_PLACEHOLDER" desc="Restore Wallet screen input placeholder">Paste recovery phrase from clipboard</message>
   <message name="IDS_BRAVE_WALLET_RESTORE_SHOW_PHRASE" desc="Restore Wallet screen show recovery phrase button">Show recovery phrase</message>
-  <message name="IDS_BRAVE_WALLET_RESTORE_LEGACY_CHECK_BOX" desc="Restore Wallet screen import legacy checkbox">Import from legacy Brave crypto wallets?</message>
+  <message name="IDS_BRAVE_WALLET_RESTORE_LEGACY_CHECK_BOX" desc="Restore Wallet screen import legacy checkbox">Import from legacy Halalz crypto wallets?</message>
   <message name="IDS_BRAVE_WALLET_RESTORE_FORM_TEXT" desc="Restore Wallet new password input">New Password</message>
   <message name="IDS_BRAVE_WALLET_TOOL_TIP_COPY_TO_CLIPBOARD" desc="General tooltip copy to clipboard">Copy to Clipboard</message>
   <message name="IDS_BRAVE_WALLET_TOOL_TIP_COPIED_TO_CLIPBOARD" desc="General tooltip copy to clipboard">Copied!</message>
   <message name="IDS_BRAVE_WALLET_PASTE_FROM_CLIPBOARD" desc="Paste from clipboard">Paste from clipboard</message>
   <message name="IDS_BRAVE_WALLET_ACCOUNTS_PRIMARY" desc="Accounts screen primary accounts title">Primary crypto accounts</message>
   <message name="IDS_BRAVE_WALLET_ACCOUNTS_SECONDARY" desc="Accounts screen secondary accounts title">Imported accounts</message>
-  <message name="IDS_BRAVE_WALLET_ACCOUNTS_PRIMARY_DISCLAIMER" desc="Accounts screen primary description">You can create primary accounts in Brave Wallet that may be backed up or restored from your recovery phrase. To learn more about account types visit account help.</message>
+  <message name="IDS_BRAVE_WALLET_ACCOUNTS_PRIMARY_DISCLAIMER" desc="Accounts screen primary description">You can create primary accounts in Halalz Wallet that may be backed up or restored from your recovery phrase. To learn more about account types visit account help.</message>
   <message name="IDS_BRAVE_WALLET_ACCOUNTS_SECONDARY_DISCLAIMER" desc="Accounts screen secondary description">These accounts can be used with Web3 DApps, and can be shown in your portfolio. However, note that secondary accounts cannot be restored via recovery phrase from your primary account backup.</message>
   <message name="IDS_BRAVE_WALLET_ACCOUNTS_ASSETS" desc="Accounts screen assets title">Assets</message>
   <message name="IDS_BRAVE_WALLET_ACCOUNTS_EDIT_VISIBLE_ASSETS" desc="Accounts screen visible assets button">Visible assets</message>
@@ -211,7 +211,7 @@
   <message name="IDS_BRAVE_WALLET_CONNECT_HARDWARE_WRONG_APPLICATION_USER_HINT" desc="User hint for wrong application being opened when connecting hardware wallet">This error may occur when the wrong application is open on the Ledger device.</message>
   <message name="IDS_BRAVE_WALLET_CONNECT_HARDWARE_TREZOR" desc="Connect hardware wallet trezor button">Trezor</message>
   <message name="IDS_BRAVE_WALLET_CONNECT_HARDWARE_LEDGER" desc="Connect hardware wallet ledger button">Ledger</message>
-  <message name="IDS_BRAVE_WALLET_CONNECT_HARDWARE_AUTHORIZATION_NEEDED" desc="Authorize hardware wallet button">Grant Brave access to your Ledger device.</message>
+  <message name="IDS_BRAVE_WALLET_CONNECT_HARDWARE_AUTHORIZATION_NEEDED" desc="Authorize hardware wallet button">Grant Halalz access to your Ledger device.</message>
   <message name="IDS_BRAVE_WALLET_CONNECTING_HARDWARE_WALLET" desc="Connect hardware wallet connecting status">Connecting...</message>
   <message name="IDS_BRAVE_WALLET_ADD_CHECKED_ACCOUNTS_HARDWARE_WALLET" desc="Connect hardware wallet check box description">Add checked accounts</message>
   <message name="IDS_BRAVE_WALLET_LOAD_MORE_ACCOUNTS_HARDWARE_WALLET" desc="Connect hardware wallet load more button">Load more</message>
@@ -281,7 +281,7 @@
   <message name="IDS_BRAVE_WALLET_BUY_DESCRIPTION" desc="Buy tab faucet description to get test crypto">Get Ether from a faucet for <ph name="SELECTED_NETWORK"><ex>Goerli Network</ex>$1</ph></message>
   <message name="IDS_BRAVE_WALLET_BUY_CONTINUE_BUTTON" desc="Buy tab continue button">Select purchase method</message>
   <message name="IDS_BRAVE_WALLET_SIGN_TRANSACTION_TITLE" desc="Sign panel title">Your signature is being requested</message>
-  <message name="IDS_BRAVE_WALLET_SIGN_WARNING" desc="Sign panel warning message">Note that Brave can’t verify what will happen if you sign. A signature could authorize nearly any operation in your account or on your behalf, including (but not limited to) giving total control of your account and crypto assets to the site making the request. Only sign if you’re sure you want to take this action, and trust the requesting site.</message>
+  <message name="IDS_BRAVE_WALLET_SIGN_WARNING" desc="Sign panel warning message">Note that Halalz can’t verify what will happen if you sign. A signature could authorize nearly any operation in your account or on your behalf, including (but not limited to) giving total control of your account and crypto assets to the site making the request. Only sign if you’re sure you want to take this action, and trust the requesting site.</message>
   <message name="IDS_BRAVE_WALLET_SIGN_WARNING_TITLE" desc="Sign panel risk title">Sign at your own risk</message>
   <message name="IDS_BRAVE_WALLET_SIGN_TRANSACTION_MESSAGE_TITLE" desc="Sign panel message title">Message</message>
   <message name="IDS_BRAVE_WALLET_SIGN_TRANSACTION_BUTTON" desc="Sign panel sign button">Sign</message>
@@ -303,7 +303,7 @@
   <message name="IDS_BRAVE_WALLET_ALLOW_SPEND_PROPOSED_ALLOWANCE" desc="Allow spend panel proposed approval">Proposed allowance</message>
   <message name="IDS_BRAVE_WALLET_ALLOW_SPEND_UNLIMITED_WARNING_TITLE" desc="Allow spend panel unlimited approval warning">Unlimited approval requested</message>
   <message name="IDS_BRAVE_WALLET_ALLOW_ADD_NETWORK_TITLE" desc="Add network panel title">Allow this site to add a network?</message>
-  <message name="IDS_BRAVE_WALLET_ALLOW_ADD_NETWORK_DESCRIPTION" desc="Add network panel description">This will allow this network to be used within Brave Wallet.</message>
+  <message name="IDS_BRAVE_WALLET_ALLOW_ADD_NETWORK_DESCRIPTION" desc="Add network panel description">This will allow this network to be used within Halalz Wallet.</message>
   <message name="IDS_BRAVE_WALLET_ALLOW_ADD_NETWORK_LEARN_MORE_BUTTON" desc="Add network panel learn more button">Learn more.</message>
   <message name="IDS_BRAVE_WALLET_ALLOW_ADD_NETWORK_NAME" desc="Add network panel name label">Network name</message>
   <message name="IDS_BRAVE_WALLET_ALLOW_ADD_NETWORK_URL" desc="Add network panel url label">Network URL</message>
@@ -328,22 +328,22 @@
   <message name="IDS_BRAVE_WALLET_CONFIRM_TRANSACTION_FRIST" desc="Confirm transaction panel first transaction button">first</message>
   <message name="IDS_BRAVE_WALLET_CONFIRM_TRANSACTIONS" desc="Confirm transaction panel transactions label">transactions</message>
   <message name="IDS_BRAVE_WALLET_CONFIRM_TRANSACTION_ACCOUNT_CREATION_FEE" desc="Confirm transaction panel account creation fee warning">The associated token account does not exist yet. A small amount of SOL will be spent to create and fund it.</message>
-  <message name="IDS_BRAVE_WALLET_PANEL_TITLE" desc="Brave Wallet panel title">Brave Wallet</message>
-  <message name="IDS_BRAVE_WALLET_PANEL_CONNECTED" desc="Brave Wallet panel connected status">Connected</message>
+  <message name="IDS_BRAVE_WALLET_PANEL_TITLE" desc="Halalz Wallet panel title">Halalz Wallet</message>
+  <message name="IDS_BRAVE_WALLET_PANEL_CONNECTED" desc="Halalz Wallet panel connected status">Connected</message>
   <message name="IDS_BRAVE_WALLET_SITE_PERMISSIONS_TITLE" desc="Site Permissions panel title">Site permissions</message>
   <message name="IDS_BRAVE_WALLET_SITE_PERMISSIONS_ACCOUNTS" desc="Site Permissions panel accounts connected"><ph name="NUMBER_OF_ACCOUNTS"><ex>5</ex>$1</ph> accounts connected</message>
   <message name="IDS_BRAVE_WALLET_SITE_PERMISSIONS_DISCONNECT" desc="Site Permissions panel disconnect from site">Disconnect</message>
   <message name="IDS_BRAVE_WALLET_SITE_PERMISSIONS_SWITCH" desc="Site Permissions panel switch account for connected site">Switch</message>
   <message name="IDS_BRAVE_WALLET_SITE_PERMISSIONS_TRUST" desc="Site Permissions panel trust account for connected site">Trust</message>
   <message name="IDS_BRAVE_WALLET_SITE_PERMISSIONS_REVOKE" desc="Site Permissions panel revoke account for connected site">Revoke</message>
-  <message name="IDS_BRAVE_WALLET_PANEL_DISCONNECTED" desc="Brave Wallet panel disconnected status">Disconnected</message>
-  <message name="IDS_BRAVE_WALLET_PANEL_BLOCKED" desc="Brave Wallet panel blocked status">Blocked</message>
-  <message name="IDS_BRAVE_WALLET_TITLE" desc="Brave Wallet Title">Wallet</message>
+  <message name="IDS_BRAVE_WALLET_PANEL_DISCONNECTED" desc="Halalz Wallet panel disconnected status">Disconnected</message>
+  <message name="IDS_BRAVE_WALLET_PANEL_BLOCKED" desc="Halalz Wallet panel blocked status">Blocked</message>
+  <message name="IDS_BRAVE_WALLET_TITLE" desc="Halalz Wallet Title">Wallet</message>
   <message name="IDS_BRAVE_WALLET_SITE_PERMISSIONS_NEW_ACCOUNT" desc="Site Permissions panel add a new account">New account</message>
-  <message name="IDS_BRAVE_WALLET_PANEL_NOT_CONNECTED" desc="Brave Wallet panel disconnected status">Connect</message>
-  <message name="IDS_BRAVE_WALLET_PANEL_VIEW_ACCOUNT_ASSETS" desc="Brave Wallet panel view account assets button">View account assets</message>
-  <message name="IDS_BRAVE_WALLET_ASSETS_PANEL_TITLE" desc="Brave Wallet assets panel title">Account assets</message>
-  <message name="IDS_BRAVE_WALLET_WELCOME_PANEL_DESCRIPTION" desc="Brave Wallet welcome panel description">Use this panel to securely access Web3 and all your crypto assets.</message>
+  <message name="IDS_BRAVE_WALLET_PANEL_NOT_CONNECTED" desc="Halalz Wallet panel disconnected status">Connect</message>
+  <message name="IDS_BRAVE_WALLET_PANEL_VIEW_ACCOUNT_ASSETS" desc="Halalz Wallet panel view account assets button">View account assets</message>
+  <message name="IDS_BRAVE_WALLET_ASSETS_PANEL_TITLE" desc="Halalz Wallet assets panel title">Account assets</message>
+  <message name="IDS_BRAVE_WALLET_WELCOME_PANEL_DESCRIPTION" desc="Halalz Wallet welcome panel description">Use this panel to securely access Web3 and all your crypto assets.</message>
   <message name="IDS_BRAVE_WALLET_LEARN_MORE" desc="Generic learn-more link text">Learn more</message>
   <message name="IDS_BRAVE_WALLET_TRANSACTION_DETAIL_BOX_FUNCTION" desc="Transaction detail box function label">FUNCTION TYPE</message>
   <message name="IDS_BRAVE_WALLET_TRANSACTION_DETAIL_BOX_HEX" desc="Transaction detail box hex data label">HEX DATA</message>
@@ -351,10 +351,10 @@
   <message name="IDS_BRAVE_WALLET_CONNECT_WITH_SITE_TITLE" desc="Connect with site panel select accounts label">Select accounts(s)</message>
   <message name="IDS_BRAVE_WALLET_CONNECT_WITH_SITE_DESCRIPTION" desc="Connect with site panel description">View the addresses of your permitted accounts (required)</message>
   <message name="IDS_BRAVE_WALLET_CONNECT_WITH_SITE_NEXT" desc="Connect with site panel next button">Next</message>
-  <message name="IDS_BRAVE_WALLET_CONNECT_WITH_SITE_HEADER_TITLE" desc="Connect with site panel header title">Connect with Brave Wallet</message>
+  <message name="IDS_BRAVE_WALLET_CONNECT_WITH_SITE_HEADER_TITLE" desc="Connect with site panel header title">Connect with Halalz Wallet</message>
   <message name="IDS_BRAVE_WALLET_CRYPTO_WALLETS_DETECTED" desc="Wallet Welcome screen detected crypto wallets title">Existing crypto wallets detected</message>
-  <message name="IDS_BRAVE_WALLET_CRYPTO_WALLETS_DESCRIPTION_TWO" desc="Wallet welcome screen detected crypto wallets second description">If you&apos;d rather skip the import and keep the old Crypto Wallets experience, just navigate to the Brave Browser <ph name="LINK_BEFORE">$1</ph>Settings<ph name="LINK_AFTER">$2</ph> and change the default back to Crypto Wallets. You can also import, try the new Brave Wallet, and change back at any time.</message>
-  <message name="IDS_BRAVE_WALLET_IMPORT_BRAVE_LEGACY_DESCRIPTION" desc="Import CryptoWallets screen description">Enter your existing crypto wallets password to import to Brave Wallet. Enjoy a faster and more secure way to manage crypto assets and interact with Web3 DApps.</message>
+  <message name="IDS_BRAVE_WALLET_CRYPTO_WALLETS_DESCRIPTION_TWO" desc="Wallet welcome screen detected crypto wallets second description">If you&apos;d rather skip the import and keep the old Crypto Wallets experience, just navigate to the Halalz Browser <ph name="LINK_BEFORE">$1</ph>Settings<ph name="LINK_AFTER">$2</ph> and change the default back to Crypto Wallets. You can also import, try the new Halalz Wallet, and change back at any time.</message>
+  <message name="IDS_BRAVE_WALLET_IMPORT_BRAVE_LEGACY_DESCRIPTION" desc="Import CryptoWallets screen description">Enter your existing crypto wallets password to import to Halalz Wallet. Enjoy a faster and more secure way to manage crypto assets and interact with Web3 DApps.</message>
   <message name="IDS_BRAVE_WALLET_IMPORT_BRAVE_LEGACY_INPUT" desc="Import CryptoWallets screen password input placeholder">Type Crypto wallets password</message>
   <message name="IDS_BRAVE_WALLET_CONNECT_HARDWARE_PANEL_CONNECTED" desc="Connect Hardware panel connected status"><ph name="DEVICE_NAME"><ex>Ledger</ex>$1</ph> connected</message>
   <message name="IDS_BRAVE_WALLET_CONNECT_HARDWARE_PANEL_DISCONNECTED" desc="Connect Hardware panel disconnected status"><ph name="DEVICE_NAME"><ex>Ledger</ex>$1</ph> disconnected</message>
@@ -480,7 +480,7 @@
     Signing typed data is supported only on Trezor Model One with Firmware 1.10.5 or higher
   </message>
   <message name="IDS_BRAVE_WALLET_SWEEPSTAKES_TITLE" desc="The title for the swap sweepstakes banner">
-    Brave Swap-stakes
+    Halalz Swap-stakes
   </message>
   <message name="IDS_BRAVE_WALLET_SWEEPSTAKES_DESCRIPTION" desc="A short description of the swap sweepstakes">
     7 days of crypto giveaways, ~&#36;500k in prizes.
@@ -497,7 +497,7 @@
   <message name="IDS_BRAVE_WALLET_MARKET_DATA_VOLUME_COLUMN" desc="Market data table volume column name">Volume</message>
   <message name="IDS_BRAVE_WALLET_MARKET_DATA_BUY_DEPOSIT_COLUMN" desc="Market data table buy/deposit column name">Buy/Deposit</message>
   <message name="IDS_BRAVE_WALLET_MARKET_DATA_NO_ASSETS_FOUND" desc="Text displayed when market data table rows are empty">No assets matching search or filter found</message>
-  <message name="IDS_BRAVE_WALLET_MARKET_DATA_COIN_NOT_SUPPORTED" desc="Text displayed market coin item is not supported in brave wallet">This asset is not supported by Brave Wallet</message>
+  <message name="IDS_BRAVE_WALLET_MARKET_DATA_COIN_NOT_SUPPORTED" desc="Text displayed market coin item is not supported in brave wallet">This asset is not supported by Halalz Wallet</message>
   <message name="IDS_BRAVE_WALLET_NOT_VALID_FIL_ADDRESS" desc="Send input not valid FIL address error">Not a valid FIL address</message>
   <message name="IDS_BRAVE_WALLET_BUY_WITH_WYRE" desc="Buy with Wyre option label">Buy with Wyre</message>
   <message name="IDS_BRAVE_WALLET_BUY_WITH_RAMP" desc="Buy with Ramp option label">Buy with Ramp</message>
@@ -623,7 +623,7 @@
   <message name="IDS_BRAVE_WALLET_HELP_CENTER" desc="Help Center link label">Help Center</message>
   <message name="IDS_BRAVE_WALLET_HELP_CENTER_TEXT" desc="Help Center text description below buy-send-swap">Need help? See</message>
   <message name="IDS_BRAVE_WALLET_HARDWARE_OPERATION_UNSUPPORTED_ERROR" desc="Error message of unsupported hardware wallet operation">This hardware wallet does not support this operation.</message>
-  <message name="IDS_BRAVE_WALLET_ENTER_YOUR_BRAVE_WALLET_PASSWORD" desc="Prompt for the user to enter their Brave Wallet password">Enter your Brave Wallet password</message>
+  <message name="IDS_BRAVE_WALLET_ENTER_YOUR_BRAVE_WALLET_PASSWORD" desc="Prompt for the user to enter their Halalz Wallet password">Enter your Halalz Wallet password</message>
   <message name="IDS_BRAVE_WALLET_ENTER_YOUR_PASSWORD" desc="Prompt for the user to enter their password">Enter your password</message>
   <message name="IDS_BRAVE_WALLET_AURORA_MODAL_TITLE" desc="Bridge to Aurora modal title">Open the Rainbow Bridge app?</message>
   <message name="IDS_BRAVE_WALLET_AURORA_MODAL_DESCRIPTION" desc="Bridge to Aurora modal description">Rainbow Bridge is an independent service that helps you bridge assets across networks, and use your crypto on other networks and DApp ecosystems. Bridging assets to other networks has some risks.</message>
@@ -632,7 +632,7 @@
   <message name="IDS_BRAVE_WALLET_AURORA_MODAL_DONT_SHOW_AGAIN" desc="Bridge to Aurora modal don't show again checkbox label">Don't show again</message>
   <message name="IDS_BRAVE_WALLET_AURORA_MODAL_OPEN_BUTTON_TEXT" desc="Bridge to Aurora modal action button text">Open Rainbow Bridge app</message>
   <message name="IDS_BRAVE_WALLET_BRIDGE_TO_AURORA_BUTTON" desc="Bridge to Aurora asset button text">Bridge to Aurora</message>
-  <message name="IDS_BRAVE_WALLET_LEARN_MORE_ABOUT_BRAVE_WALLET" desc="Link to article explaining crypto wallets">Learn more about Brave Wallet</message>
+  <message name="IDS_BRAVE_WALLET_LEARN_MORE_ABOUT_BRAVE_WALLET" desc="Link to article explaining crypto wallets">Learn more about Halalz Wallet</message>
   <message name="IDS_BRAVE_WALLET_PASSWORD_STRENGTH_TOOLTIP_HEADING" desc="Heading of password strength tooltip">At least:</message>
   <message name="IDS_BRAVE_WALLET_PASSWORD_STRENGTH_TOOLTIP_IS_LONG_ENOUGH" desc="Password strength length requirements">8 characters</message>
   <message name="IDS_BRAVE_WALLET_PASSWORD_MATCH" desc="Password and confirmed passwords match">Match!</message>
@@ -641,7 +641,7 @@
   <message name="IDS_BRAVE_WALLET_PASSWORD_IS_WEAK" desc="Password is weak">Weak</message>
   <message name="IDS_BRAVE_WALLET_ONBOARDING_RECOVERY_PHRASE_BACKUP_INTRO_TITLE" desc="Title before backing up wallet">Before you start backing up wallet</message>
   <message name="IDS_BRAVE_WALLET_ONBOARDING_RECOVERY_PHRASE_BACKUP_INTRO_DESCRIPTION" desc="Recovery phrase backup description">The 12-24 word recovery phrase is a private key you can use to regain access to your wallet in case you lose a connected device(s). Store it someplace safe, and in the exact order it appears below.</message>
-  <message name="IDS_BRAVE_WALLET_RECOVERY_PHRASE_BACKUP_WARNING" desc="A warning regarding recovery phrase safety">Brave cannot access your secret recovery phrase. Keep it safe, and never share it with anyone else.</message>
+  <message name="IDS_BRAVE_WALLET_RECOVERY_PHRASE_BACKUP_WARNING" desc="A warning regarding recovery phrase safety">Halalz cannot access your secret recovery phrase. Keep it safe, and never share it with anyone else.</message>
   <message name="IDS_BRAVE_WALLET_RECOVERY_PHRASE_BACKUP_WARNING_IMPORTANT" desc="An important warning regarding recovery phrase safety"><ph name="TAG_BEFORE">$1</ph>Important: <ph name="TAG_AFTER">$2</ph>Never share your recovery phrase. Anyone with this phrase can take your assets forever.</message>
   <message name="IDS_BRAVE_WALLET_RECOVERY_PHRASE_BACKUP_TITLE" desc="Title to recovery phrase backup screen">Back up your wallet recovery phrase</message>
   <message name="IDS_BRAVE_WALLET_COPIED_TO_CLIPBOARD" desc="Alert confirming that a value was copied to the system clipboard">Copied to clipboard</message>
@@ -661,8 +661,8 @@
   <message name="IDS_BRAVE_WALLET_ORDINAL_SUFFIX_TWO" desc="Second ordinal suffix">nd</message>
   <message name="IDS_BRAVE_WALLET_ORDINAL_SUFFIX_FEW" desc="Suffix for 'few' ordinal">rd</message>
   <message name="IDS_BRAVE_WALLET_ORDINAL_SUFFIX_OTHER" desc="Suffix for 'other' ordinal">th</message>
-  <message name="IDS_BRAVE_WALLET_ONBOARDING_SUCCESS_TITLE" desc="Wallet is ready for use message">Congratulations! Your Brave Wallet is ready to go!</message>
-  <message name="IDS_BRAVE_WALLET_ONBOARDING_SUCCESS_DESCRIPTION" desc="Wallet access description">To access your wallet, just click the wallet icon at the top right of any Brave browser window.</message>
+  <message name="IDS_BRAVE_WALLET_ONBOARDING_SUCCESS_TITLE" desc="Wallet is ready for use message">Congratulations! Your Halalz Wallet is ready to go!</message>
+  <message name="IDS_BRAVE_WALLET_ONBOARDING_SUCCESS_DESCRIPTION" desc="Wallet access description">To access your wallet, just click the wallet icon at the top right of any Halalz browser window.</message>
   <message name="IDS_BRAVE_WALLET_ARTICLE_LINK_HOW_TO_USE_A_WALLET" desc="Title of article link 'How to use a crypto wallet?'">How to use a crypto wallet?</message>
   <message name="IDS_BRAVE_WALLET_ARTICLE_LINK_WHATS_THE_BEST_WALLET" desc="Title of article link 'What’s the best crypto wallet?'">What’s the best crypto wallet?</message>
   <message name="IDS_BRAVE_WALLET_ARTICLE_LINK_WHATS_A_CRYPTO_BROWSER" desc="Title of article link 'What’s a crypto browser?'">What’s a crypto browser?</message>
@@ -671,12 +671,12 @@
   <message name="IDS_BRAVE_WALLET_ARTICLE_LINK_WHAT_ARE_DAPPS" desc="Title of article link 'What are DApps?'">What are DApps?</message>
   <message name="IDS_BRAVE_WALLET_ARTICLE_LINK_WHAT_IS_WEB3" desc="Title of article link 'What’s web 3?'">What’s web 3?</message>
   <message name="IDS_BRAVE_WALLET_METAMASK_EXTENSION_DETECTED" desc="Detected MetaMask Extension for import title">We detected the MetaMask extension in your browser</message>
-  <message name="IDS_BRAVE_WALLET_METAMASK_EXTENSION_IMPORT_DESCRIPTION" desc="Detected MetaMask Extension import description">Enter your MetaMask wallet password to easily import to Brave Wallet.</message>
+  <message name="IDS_BRAVE_WALLET_METAMASK_EXTENSION_IMPORT_DESCRIPTION" desc="Detected MetaMask Extension import description">Enter your MetaMask wallet password to easily import to Halalz Wallet.</message>
   <message name="IDS_BRAVE_WALLET_IMPORT_OR_RESTORE_WALLET_TITLE" desc="Title to Import or Restore Wallet onboarding screen">Connect to your existing wallet</message>
   <message name="IDS_BRAVE_WALLET_IMPORT_OR_RESTORE_DESCRIPTION" desc="Description of Import or Restore Wallet onboarding screen">To connect a wallet you already have, you may need to enter your recovery phrase. At this time we support restoring / importing from Ethereum and Solana wallets.</message>
-  <message name="IDS_BRAVE_WALLET_RESTORE_MY_BRAVE_WALLET" desc="Button text to restore from an existing Brave Wallet">Restore from seed phrase</message>
-  <message name="IDS_BRAVE_WALLET_RESTORE_MY_BRAVE_WALLET_DESCRIPTION" desc="Secondary button text to restore from an existing Brave Wallet">12-24 words</message>
-  <message name="IDS_BRAVE_WALLET_RESTORE_MY_BRAVE_WALLET_INSTRUCTIONS" desc="Instruction text to restore from an existing Brave Wallet seed">Type your Brave Wallet 12-24 word recovery phrase.</message>
+  <message name="IDS_BRAVE_WALLET_RESTORE_MY_BRAVE_WALLET" desc="Button text to restore from an existing Halalz Wallet">Restore from seed phrase</message>
+  <message name="IDS_BRAVE_WALLET_RESTORE_MY_BRAVE_WALLET_DESCRIPTION" desc="Secondary button text to restore from an existing Halalz Wallet">12-24 words</message>
+  <message name="IDS_BRAVE_WALLET_RESTORE_MY_BRAVE_WALLET_INSTRUCTIONS" desc="Instruction text to restore from an existing Halalz Wallet seed">Type your Halalz Wallet 12-24 word recovery phrase.</message>
   <message name="IDS_BRAVE_WALLET_IMPORT_FROM_META_MASK" desc="Button text to restore from an existing MetaMask wallet">Import from MetaMask</message>
   <message name="IDS_BRAVE_WALLET_IMPORT_FROM_META_MASK_DESCRIPTION" desc="Secondary button text to restore from an existing MetaMask wallet">Use your MetaMask password to import your seed phrase</message>
   <message name="IDS_BRAVE_WALLET_CREATE_WALLET_INSTEAD_LINK" desc="A navigation link to create a new wallet">Never mind, I’ll create a new wallet</message>
@@ -686,15 +686,15 @@
   <message name="IDS_BRAVE_WALLET_LEARN_ABOUT_MY_WALLET" desc="Link to an article explaining crypto wallets">Learn more about my new wallet</message>
   <message name="IDS_BRAVE_WALLET_DISCLOSURES_TITLE" desc="Title text for Wallet Disclosures page">Legal stuff</message>
   <message name="IDS_BRAVE_WALLET_DISCLOSURES_DESCRIPTION" desc="Description text for Wallet Disclosures page">Please acknowledge the following:</message>
-  <message name="IDS_BRAVE_WALLET_SELF_CUSTODY_DISCLOSURE_CHECKBOX_TEXT" desc="Self-custody wallet responsibility acknowledgement text">I understand this is a self-custody wallet, and that I alone am responsible for any associated funds, assets, or accounts, and for taking appropriate action to secure, protect and backup my wallet. I understand that Brave can NOT access my wallet or reverse transactions on my behalf, and that my recovery phrase is the ONLY way to regain access in the event of a lost password, stolen device, or similar circumstance.</message>
+  <message name="IDS_BRAVE_WALLET_SELF_CUSTODY_DISCLOSURE_CHECKBOX_TEXT" desc="Self-custody wallet responsibility acknowledgement text">I understand this is a self-custody wallet, and that I alone am responsible for any associated funds, assets, or accounts, and for taking appropriate action to secure, protect and backup my wallet. I understand that Halalz can NOT access my wallet or reverse transactions on my behalf, and that my recovery phrase is the ONLY way to regain access in the event of a lost password, stolen device, or similar circumstance.</message>
   <message name="IDS_BRAVE_WALLET_TERMS_OF_SERVICE_CHECKBOX_TEXT" desc="Wallet Terms of use acknowledgement text">I have read and agree to the <ph name="LINK_BEFORE">$1</ph>Terms of use<ph name="LINK_AFTER">$2</ph></message>
   <message name="IDS_BRAVE_WALLET_BUY_CRYPTO_BUTTON" desc="Buy crypto button text">Buy crypto</message>
   <message name="IDS_BRAVE_WALLET_DEPOSIT_CRYPTO_BUTTON" desc="Deposit Crypto button text">Deposit</message>
   <message name="IDS_BRAVE_WALLET_CHECKING_INSTALLED_EXTENSIONS" desc="Loading text while checking for installed crypto wallet extensions">Checking for wallet extensions...</message>
-  <message name="IDS_BRAVE_WALLET_IMPORT_FROM_LEGACY" desc="Import from legacy crypto wallet extension button text">Import from legacy Brave crypto wallets</message>
+  <message name="IDS_BRAVE_WALLET_IMPORT_FROM_LEGACY" desc="Import from legacy crypto wallet extension button text">Import from legacy Halalz crypto wallets</message>
   <message name="IDS_BRAVE_WALLET_BUY_SELECT_ASSET" desc="Continue button text for buy crypto flow when an asset is not yet selected">Select an asset</message>
   <message name="IDS_BRAVE_WALLET_FUND_WALLET_TITLE" desc="Fund wallet screen title text">To finish your <ph name="ASSET_TICKER">$1<ex>1</ex></ph> purchase, select one of our partners</message>
-  <message name="IDS_BRAVE_WALLET_FUND_WALLET_DESCRIPTION" desc="Fund wallet screen description text">On completion, your funds will be transfered to your Brave Wallet</message>
+  <message name="IDS_BRAVE_WALLET_FUND_WALLET_DESCRIPTION" desc="Fund wallet screen description text">On completion, your funds will be transfered to your Halalz Wallet</message>
   <message name="IDS_BRAVE_WALLET_DEPOSIT_FUNDS_TITLE" desc="Deposit funds screen title">Deposit crypto</message>
   <message name="IDS_BRAVE_WALLET_DEPOSIT_X" desc="Generic prompt to deposit an asset">Deposit <ph name="VALUE">$1</ph></message>
   <message name="IDS_BRAVE_WALLET_DEPOSIT_SOL_SPL_TOKENS" desc="Description of depositable Solana wallet assets">Deposit Solana or SPL tokens</message>
@@ -747,7 +747,7 @@
   <message name="IDS_BRAVE_WALLET_NO_TRANSACTIONS_YET_DESCRIPTION" desc="Explaination of why the transaction list is empty, and what to expect after the first transaction is available">After your first transaction you will be able to view it here.</message>
   <message name="IDS_BRAVE_WALLET_NFT_FETCHING_ERROR" desc="Error message displayed when nft metadata is not successfully fetched">Something went wrong when fetching NFT details. Please try again later.</message>
   <message name="IDS_BRAVE_WALLET_ENTER_A_PASSSWORD_TO_CONTINUE" desc="Prompt to enter a password before continuing">Enter a password to continue</message>
-  <message name="IDS_BRAVE_WALLET_ENTER_YOUR_PASSWORD_TO_START_BACKUP" desc="Password prompt description for backing up wallet">Enter your Brave Wallet password to start backing up wallet.</message>
+  <message name="IDS_BRAVE_WALLET_ENTER_YOUR_PASSWORD_TO_START_BACKUP" desc="Password prompt description for backing up wallet">Enter your Halalz Wallet password to start backing up wallet.</message>
   <message name="IDS_BRAVE_SWAP" desc="Swap main title">Swap</message>
   <message name="IDS_BRAVE_SWAP_REVIEW_ORDER" desc="Text for swap button">Review order</message>
   <message name="IDS_BRAVE_SWAP_APPROVE_TOKEN" desc="Text for swap button while approving ERC20 token">Approve <ph name="TOKEN">$1</ph></message>
@@ -768,8 +768,8 @@
   <message name="IDS_BRAVE_SWAP_PRICE_IMPACT" desc="Swap price impact">Price impact</message>
   <message name="IDS_BRAVE_SWAP_MINIMUM_RECEIVED_AFTER_SLIPPAGE" desc="Minimum guaranteed amount user will get after the swap">Minimum received after slippage</message>
   <message name="IDS_BRAVE_SWAP_NETWORK_FEE" desc="Text indicating network fees">Network fee</message>
-  <message name="IDS_BRAVE_SWAP_BRAVE_FEE" desc="Text indicating Brave fee for swaps">Brave fee</message>
-  <message name="IDS_BRAVE_SWAP_FREE" desc="Text indicating free Brave fees for swaps">Free</message>
+  <message name="IDS_BRAVE_SWAP_BRAVE_FEE" desc="Text indicating Halalz fee for swaps">Halalz fee</message>
+  <message name="IDS_BRAVE_SWAP_FREE" desc="Text indicating free Halalz fees for swaps">Free</message>
   <message name="IDS_BRAVE_SWAP_LIQUIDITY_PROVIDER" desc="Liquidity provider for the swap quote">Liquidity provider</message>
   <message name="IDS_BRAVE_SWAP_SWAP_AND_SEND" desc="Swap and send to a specific address in one transaction">Swap &amp; send</message>
   <message name="IDS_BRAVE_SWAP_NO_EXTRA_FEES" desc="Text indicating swap and send has no extra fees">NO extra fees!</message>
@@ -787,7 +787,7 @@
   <message name="IDS_BRAVE_SWAP_EXCHANGES" desc="Exchanges to use for the swap trade">Exchanges</message>
   <message name="IDS_BRAVE_SWAP_DIRECT_ROUTE_TITLE" desc="Text indicating that swap must use direct routes in the trade">Direct route only</message>
   <message name="IDS_BRAVE_SWAP_DIRECT_ROUTE_DESCRIPTION" desc="Text description direct swap routes option">It insures only direct routing and also disables split trade trading</message>
-  <message name="IDS_BRAVE_SWAP_NETWORK_FEE_DESCRIPTION" desc="Network fee description">Brave uses the top 60 tokens for intermediate routing for performance optimization</message>
+  <message name="IDS_BRAVE_SWAP_NETWORK_FEE_DESCRIPTION" desc="Network fee description">Halalz uses the top 60 tokens for intermediate routing for performance optimization</message>
   <message name="IDS_BRAVE_SWAP_COINGECKO_CHEAPER" desc="Quote rate is cheaper than CoinGecko"><ph name="VALUE">$1<ex>0.12</ex></ph>% cheaper than CoinGecko</message>
   <message name="IDS_BRAVE_SWAP_COINGECKO_WITHIN" desc="Quote rate is within small percentage of CoinGecko">Within <ph name="VALUE">$1<ex>0.12</ex></ph>% CoinGecko</message>
   <message name="IDS_BRAVE_SWAP_COINGECKO_EXPENSIVE" desc="Quote rate is more expensive than CoinGecko"><ph name="VALUE">$1<ex>12</ex></ph>% more expensive than CoinGecko</message>
@@ -803,8 +803,8 @@
   <message name="IDS_BRAVE_SWAP_HELP_CENTER" desc="Help center">Help Center</message>
   <message name="IDS_BRAVE_SWAP_PRIVACY_POLICY" desc="Privacy policy">Privacy Policy</message>
   <message name="IDS_BRAVE_SWAP_PRIVACY_DESCRIPTION" desc="Privacy policy description">This app uses the following third-party APIs:</message>
-  <message name="IDS_BRAVE_SWAP_ZERO_EX_DISCLAIMER" desc="0x swap privacy policy disclaimer">Brave Swap uses 0x as a DEX aggregator for supported EVM networks. 0x will process the Ethereum wallet address and IP address to fulfill a transaction (including getting quotes). 0x will ONLY use this data for the purposes of processing transactions.</message>
-  <message name="IDS_BRAVE_SWAP_JUPITER_DISCLAIMER" desc="Jupiter swap privacy policy disclaimer">Brave Swap uses Jupiter as a DEX aggregator for Solana network. Jupiter will process the Solana wallet address and IP address to fulfill a transaction (including getting quotes). Jupiter will ONLY use this data for the purposes of processing transactions.</message>
+  <message name="IDS_BRAVE_SWAP_ZERO_EX_DISCLAIMER" desc="0x swap privacy policy disclaimer">Halalz Swap uses 0x as a DEX aggregator for supported EVM networks. 0x will process the Ethereum wallet address and IP address to fulfill a transaction (including getting quotes). 0x will ONLY use this data for the purposes of processing transactions.</message>
+  <message name="IDS_BRAVE_SWAP_JUPITER_DISCLAIMER" desc="Jupiter swap privacy policy disclaimer">Halalz Swap uses Jupiter as a DEX aggregator for Solana network. Jupiter will process the Solana wallet address and IP address to fulfill a transaction (including getting quotes). Jupiter will ONLY use this data for the purposes of processing transactions.</message>
   <message name="IDS_BRAVE_SWAP_ZERO_EX_PRIVACY" desc="0x swap full privacy policy link text">Click here for 0x Privacy Policy.</message>
   <message name="IDS_BRAVE_SWAP_JUPITER_PRIVACY" desc="Jupiter swap full privacy policy link text">Click here for Jupiter Privacy Policy.</message>
 </grit-part>

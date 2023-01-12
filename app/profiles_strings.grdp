@@ -576,7 +576,7 @@
       Guest mode
     </message>
     <message name="IDS_PROFILE_PICKER_BACK_BUTTON_ARIA_LABEL" desc="Label for a button that navigates user to the previous page from a profile picker subpage">
-      Back from <ph name="PAGE_TITLE">$1<ex>Set up your new Brave profile</ex></ph> page
+      Back from <ph name="PAGE_TITLE">$1<ex>Set up your new Halalz profile</ex></ph> page
     </message>
     <message name="IDS_PROFILE_PICKER_BACK_BUTTON_SIGN_IN_LABEL" desc="Label for a button that navigates user to the previous page from the 'Sign in' page">
       Back from sign in
@@ -725,16 +725,16 @@
         Delete this profile and browsing data?
       </message>
       <message name="IDS_PROFILE_PICKER_REMOVE_WARNING_SIGNED_IN_PROFILE_LACROS" desc="Remove warning message shown for signed in profiles shown when the user selects remove from the 3 dotted menu">
-        This will permanently delete browsing data from this device. The Brave sync chains in this profile may be used by other apps on your <ph name="DEVICE_TYPE">$1<ex>Chromebook</ex></ph>. You can remove these accounts in <ph name="BEGIN_LINK">&lt;a is="action-link" target="_blank"&gt;</ph><ph name="SETTING_SECTION">$2<ex>Settings</ex></ph> &gt; <ph name="ACCOUNTS_SECTION">$3<ex>Accounts</ex></ph><ph name="END_LINK">&lt;/a&gt;</ph>.
+        This will permanently delete browsing data from this device. The Halalz sync chains in this profile may be used by other apps on your <ph name="DEVICE_TYPE">$1<ex>Chromebook</ex></ph>. You can remove these accounts in <ph name="BEGIN_LINK">&lt;a is="action-link" target="_blank"&gt;</ph><ph name="SETTING_SECTION">$2<ex>Settings</ex></ph> &gt; <ph name="ACCOUNTS_SECTION">$3<ex>Accounts</ex></ph><ph name="END_LINK">&lt;/a&gt;</ph>.
       </message>
-      <message name="IDS_PRIMARY_PROFILE_FIRST_RUN_NEXT_BUTTON_LABEL" desc="Label of the 'next' button of the landing screen in first run experience for the primary profile. The screen promotes Brave sync.">
+      <message name="IDS_PRIMARY_PROFILE_FIRST_RUN_NEXT_BUTTON_LABEL" desc="Label of the 'next' button of the landing screen in first run experience for the primary profile. The screen promotes Halalz sync.">
         Let's go
       </message>
     </if>
 
     <!-- First Run Experience strings -->
     <if expr="not chromeos_lacros">
-      <message name="IDS_FRE_SIGN_IN_TITLE" desc="The title for the sign in page explaining to the users the benefits of signing in to Brave">
+      <message name="IDS_FRE_SIGN_IN_TITLE" desc="The title for the sign in page explaining to the users the benefits of signing in to Halalz">
         Sign in for more benefits
       </message>
       <message name="IDS_FRE_DEVICES_CARD_TITLE" desc="The title of the benefits card explaining to the the users that they can continue their work on any of their signed in devices">
@@ -743,10 +743,10 @@
       <message name="IDS_FRE_DEVICES_CARD_DESCRIPTION" desc="The description of the benefits card explaining to the users that they can continue their work on any of their signed in devices">
         Pick up where you left off on any device
       </message>
-      <message name="IDS_FRE_SECURITY_CARD_TITLE" desc="The title of the benefits card explaining to the users that signing in to Brave offers strong security features">
+      <message name="IDS_FRE_SECURITY_CARD_TITLE" desc="The title of the benefits card explaining to the users that signing in to Halalz offers strong security features">
         Stronger security
       </message>
-      <message name="IDS_FRE_SECURITY_CARD_DESCRIPTION" desc="The description of the benefits card explaining to the users that signing in to Brave will grant them more security thus protecting their passwords and more">
+      <message name="IDS_FRE_SECURITY_CARD_DESCRIPTION" desc="The description of the benefits card explaining to the users that signing in to Halalz will grant them more security thus protecting their passwords and more">
         Extra protection to your passwords and more
       </message>
       <message name="IDS_FRE_BACKUP_CARD_TITLE" desc="The title of the benefits card explaining to the users that they can back up their stuff and use them across all signed in devices">
@@ -755,10 +755,10 @@
       <message name="IDS_FRE_BACKUP_CARD_DESCRIPTION" desc="The description of the benefits card giving users examples of data they can back up when they sign in">
         Store your bookmarks and more with sync
       </message>
-      <message name="IDS_FRE_DECLINE_SIGN_IN_BUTTON_TITLE" desc="The title of the button giving the users the choice not to sign in to Brave">
+      <message name="IDS_FRE_DECLINE_SIGN_IN_BUTTON_TITLE" desc="The title of the button giving the users the choice not to sign in to Halalz">
         Don't sign in
       </message>
-      <message name="IDS_FRE_ACCEPT_SIGN_IN_BUTTON_TITLE" desc="The title of the button giving the users the choice to sign in to Brave">
+      <message name="IDS_FRE_ACCEPT_SIGN_IN_BUTTON_TITLE" desc="The title of the button giving the users the choice to sign in to Halalz">
         Sign in
       </message>
     </if>

@@ -21,7 +21,7 @@
 
 namespace {
 
-constexpr char16_t kTabDomain[] = u"brave://settings";
+constexpr char16_t kTabDomain[] = u"halalz://settings";
 constexpr char16_t kTabTitle[] = u"Settings - Addresses and more";
 constexpr char kTabUrl[] = "chrome://settings/addresses";
 

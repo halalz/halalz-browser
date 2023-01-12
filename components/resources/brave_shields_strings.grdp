@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <grit-part>
-  <message name="IDS_BRAVE_SHIELDS" translateable="false" desc="Title for Brave Shields">
-    Brave Shields
+  <message name="IDS_BRAVE_SHIELDS" translateable="false" desc="Title for Halalz Shields">
+    Halalz Shields
   </message>
 
   <message name="IDS_BRAVE_SHIELDS_STANDALONE" desc="Label for back button on inner views of Shields panel">
     Shields
   </message>
 
-  <message name="IDS_BRAVE_SHIELDS_ENABLE" desc="An accessible label for Brave Shields switch button.">
-    Enable Brave Shields
+  <message name="IDS_BRAVE_SHIELDS_ENABLE" desc="An accessible label for Halalz Shields switch button.">
+    Enable Halalz Shields
   </message>
 
-  <message name="IDS_BRAVE_SHIELDS_UP" desc="Status label for when Brave Shields is enabled.">
+  <message name="IDS_BRAVE_SHIELDS_UP" desc="Status label for when Halalz Shields is enabled.">
     Shields are UP <ph name="LINK_BEFORE">$1</ph>for<ph name="LINK_AFTER">$2</ph>
   </message>
 
-  <message name="IDS_BRAVE_SHIELDS_DOWN" desc="Status label for when Brave Shields is disabled.">
+  <message name="IDS_BRAVE_SHIELDS_DOWN" desc="Status label for when Halalz Shields is disabled.">
     Shields are DOWN <ph name="LINK_BEFORE">$1</ph>for<ph name="LINK_AFTER">$2</ph>
   </message>
 
   <message name="IDS_BRAVE_SHIELDS_BROKEN" desc="A footnote below the main Shields switch button.">
     If this site seems broken, try Shields down.
-    <ph name="LINK_BEFORE">$1</ph>Note: this may reduce Brave's privacy protections.<ph name="LINK_AFTER">$2</ph>
+    <ph name="LINK_BEFORE">$1</ph>Note: this may reduce Halalz's privacy protections.<ph name="LINK_AFTER">$2</ph>
   </message>
 
   <message name="IDS_BRAVE_SHIELDS_BLOCKED_NOTE" desc="Description to convey trackers, advertisement and more are being blocked.">
     Trackers, ads, and more blocked <ph name="LINK_BEFORE">$1</ph>Learn more<ph name="LINK_AFTER">$2</ph>
   </message>
 
-  <message name="IDS_BRAVE_SHIELDS_NOT_BLOCKED_NOTE" desc="Description to convey trackers, advertisement and more are not being blocked. Do not translate Brave SHields.">
-    Not protected by Brave Shields <ph name="LINK_BEFORE">$1</ph>Learn more<ph name="LINK_AFTER">$2</ph>
+  <message name="IDS_BRAVE_SHIELDS_NOT_BLOCKED_NOTE" desc="Description to convey trackers, advertisement and more are not being blocked. Do not translate Halalz SHields.">
+    Not protected by Halalz Shields <ph name="LINK_BEFORE">$1</ph>Learn more<ph name="LINK_AFTER">$2</ph>
   </message>
 
   <message name="IDS_BRAVE_SHIELDS_ADVANCED_CTRLS" desc="A button label to expand/collapse more options.">
@@ -126,11 +126,11 @@
   </message>
 
    <message name="IDS_BRAVE_SHIELDS_DOWN_DESC" desc="Tell users the site's Shield is turned off">
-    You are viewing this site without Brave's privacy protections.
+    You are viewing this site without Halalz's privacy protections.
   </message>
 
   <message name="IDS_BRAVE_SHIELDS_ICON_TOOLTIP" desc="The message shown on hover of the shields lion icon">
-    Brave Shields
+    Halalz Shields
 <ph name="NUMBER">$1</ph> Trackers, ads, and more blocked
   </message>
 
@@ -147,7 +147,7 @@
   </message>
 
   <message name="IDS_BRAVE_SHIELDS_COOKIE_LIST_TEXT" desc="Description text for CookieList opt-in bubble">
-    Brave already blocks third-party cookies. We can block cookie consent notices, too.
+    Halalz already blocks third-party cookies. We can block cookie consent notices, too.
   </message>
 
   <message name="IDS_BRAVE_SHIELDS_COOKIE_LIST_BUTTON_TEXT" desc="Label for button to enable the CookieList filter">
@@ -159,6 +159,6 @@
   </message>
 
   <message name="IDS_BRAVE_SHIELDS_NOT_VALID_ADDRESS" desc="Label for link about invalid pattern for content setting page dialog to add a site">
-    Wildcards are not allowed for Brave Shields.
+    Wildcards are not allowed for Halalz Shields.
   </message>
 </grit-part>

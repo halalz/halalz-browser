@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <grit-part>
   <message name="IDS_BRAVE_VPN" translateable="false" desc="Title for VPN the product">
-    Brave Firewall + VPN
+    Halalz Firewall + VPN
   </message>
 
   <message name="IDS_BRAVE_VPN_CONNECTED_TOOLTIP" desc="Status tooltip label when VPN has connected to a region">
-    Brave Firewall + VPN: Connected
+    Halalz Firewall + VPN: Connected
   </message>
 
   <message name="IDS_BRAVE_VPN_DISCONNECTED_TOOLTIP" desc="Status tooltip label when VPN has disconnected">
-    Brave Firewall + VPN: Disconnected
+    Halalz Firewall + VPN: Disconnected
   </message>
 
   <message name="IDS_BRAVE_VPN_PANEL_NAME" desc="The name of VPN panel">
-    Brave VPN Panel UI
+    Halalz VPN Panel UI
   </message>
 
   <message name="IDS_BRAVE_VPN_CONNECT" desc="Button title to perform connect to a region">
@@ -52,13 +52,13 @@
     Choose another server
   </message>
 
-  <message name="IDS_BRAVE_VPN_UNABLE_CONNECT_INFO" desc="Description of which region VPN couldn't connect to"><ph name="PRODUCT_NAME">$1<ex>Brave Firewall + VPN</ex></ph> couldn't connect to the <ph name="REGION_NAME">$2<ex>Tokyo</ex></ph> server. You can try again, or choose another.</message>
+  <message name="IDS_BRAVE_VPN_UNABLE_CONNECT_INFO" desc="Description of which region VPN couldn't connect to"><ph name="PRODUCT_NAME">$1<ex>Halalz Firewall + VPN</ex></ph> couldn't connect to the <ph name="REGION_NAME">$2<ex>Tokyo</ex></ph> server. You can try again, or choose another.</message>
 
   <message name="IDS_BRAVE_VPN_BUY" desc="Button title to purchase vpn">
     Buy
   </message>
 
-  <message name="IDS_BRAVE_VPN_HAS_PURCHASED" desc="Link text to redirect the user to Brave account login page. Do not translate VPN.">Already purchased VPN?</message>
+  <message name="IDS_BRAVE_VPN_HAS_PURCHASED" desc="Link text to redirect the user to Halalz account login page. Do not translate VPN.">Already purchased VPN?</message>
 
   <message name="IDS_BRAVE_VPN_POWERED_BY" desc="Label to show next to Guardian logo">
     Powered by
@@ -125,7 +125,7 @@
   </message>
 
   <message name="IDS_BRAVE_VPN_PAYMENT_FAILURE_REASON" desc="A long form on the consequence of failed payment">
-    Looks like your most recent payment for <ph name="VALUE">$1<ex>VPN Subscription</ex></ph> did not go through. Access to this subscription will pause until the payment issue is resolved. Try to edit your payment method, or contact Brave support.
+    Looks like your most recent payment for <ph name="VALUE">$1<ex>VPN Subscription</ex></ph> did not go through. Access to this subscription will pause until the payment issue is resolved. Try to edit your payment method, or contact Halalz support.
   </message>
 
   <message name="IDS_BRAVE_VPN_SUPPORT_EMAIL" desc="Label above email input on VPN support">
@@ -208,41 +208,41 @@
 
   <if expr="is_macosx">
     <message name="IDS_BRAVE_VPN_CONNECT_NOT_ALLOWED" desc="A highlited note on the main panel when permission from the user is not allowed to create a VPN profile on OS-level">
-      VPN connection failed. Please try connecting again, and be sure to click Allow to enable Brave's VPN configuration.
+      VPN connection failed. Please try connecting again, and be sure to click Allow to enable Halalz's VPN configuration.
     </message>
   </if>
 
-  <message name="IDS_BRAVE_VPN_DNS_CHANGE_ALERT" desc="A text shown to user when he changed DNS settings with Brave VPN enabled">
-    Turning off secure DNS or using default servers on Windows may reveal the names of the sites you visit to your Internet service provider. Brave does not recommend doing this. Do you want to do it anyways?
+  <message name="IDS_BRAVE_VPN_DNS_CHANGE_ALERT" desc="A text shown to user when he changed DNS settings with Halalz VPN enabled">
+    Turning off secure DNS or using default servers on Windows may reveal the names of the sites you visit to your Internet service provider. Halalz does not recommend doing this. Do you want to do it anyways?
   </message>
 
-  <message name="IDS_BRAVE_VPN_DNS_POLICY_ALERT" desc="A text shown to user when he enabled Brave VPN with disabled DoH by policies">
-    Secure DNS is disabled by your organization's policies. Using Brave VPN without Secure DNS may reveal the names of the sites you visit to your Internet service provider or organization.
+  <message name="IDS_BRAVE_VPN_DNS_POLICY_ALERT" desc="A text shown to user when he enabled Halalz VPN with disabled DoH by policies">
+    Secure DNS is disabled by your organization's policies. Using Halalz VPN without Secure DNS may reveal the names of the sites you visit to your Internet service provider or organization.
   </message>
   <if expr="is_win">
-    <message name="IDS_BRAVE_VPN_DNS_SETTINGS_NOTIFICATION_DIALOG_TITLE" desc="A title of text shown to user when he enabled Brave VPN without DoH and we override settings">
-      Brave VPN on Windows
+    <message name="IDS_BRAVE_VPN_DNS_SETTINGS_NOTIFICATION_DIALOG_TITLE" desc="A title of text shown to user when he enabled Halalz VPN without DoH and we override settings">
+      Halalz VPN on Windows
     </message>
   </if>
-  <message name="IDS_BRAVE_VPN_DNS_SETTINGS_NOTIFICATION_DIALOG_LEARN_MORE_TEXT" desc="A text shown to user when he enabled Brave VPN without DoH and we override settings to visit help center">
+  <message name="IDS_BRAVE_VPN_DNS_SETTINGS_NOTIFICATION_DIALOG_LEARN_MORE_TEXT" desc="A text shown to user when he enabled Halalz VPN without DoH and we override settings to visit help center">
     Learn more.
   </message>
 
-  <message name="IDS_SETTINGS_SECURE_DNS_DISABLED_BY_BRAVE_VPN" desc="A text shown to user on settings page for DNS setting when it is blocked by BraveVPN">
-    The setting is locked by BraveVPN while it is connected
+  <message name="IDS_SETTINGS_SECURE_DNS_DISABLED_BY_BRAVE_VPN" desc="A text shown to user on settings page for DNS setting when it is blocked by HalalzVPN">
+    The setting is locked by HalalzVPN while it is connected
   </message>
 
-  <message name="IDS_BRAVE_VPN_DNS_SETTINGS_NOTIFICATION_DIALOG_TEXT" desc="A text shown to user when he enabled Brave VPN without DoH and we override settings">
-    Windows has a feature called Smart Multi-Homed Name Resolution, which can expose information about your location and the sites you visit. Now that you’ve enabled Brave VPN, we’ve changed the DNS settings in the browser to protect against this exposure. The settings will remain in effect and locked while VPN is connected. <ph name="LEARN_MORE">$1<ex>Learn more.</ex></ph>
+  <message name="IDS_BRAVE_VPN_DNS_SETTINGS_NOTIFICATION_DIALOG_TEXT" desc="A text shown to user when he enabled Halalz VPN without DoH and we override settings">
+    Windows has a feature called Smart Multi-Homed Name Resolution, which can expose information about your location and the sites you visit. Now that you’ve enabled Halalz VPN, we’ve changed the DNS settings in the browser to protect against this exposure. The settings will remain in effect and locked while VPN is connected. <ph name="LEARN_MORE">$1<ex>Learn more.</ex></ph>
   </message>
 
-  <message name="IDS_BRAVE_VPN_DNS_SETTINGS_NOTIFICATION_DIALOG_CHECKBOX_TEXT" desc="A text shown to user on dialog's checkbpox when he enabled Brave VPN and we override settings">
+  <message name="IDS_BRAVE_VPN_DNS_SETTINGS_NOTIFICATION_DIALOG_CHECKBOX_TEXT" desc="A text shown to user on dialog's checkbpox when he enabled Halalz VPN and we override settings">
     Do not warn me about this anymore.
   </message>
-  <message name="IDS_BRAVE_VPN_DNS_SETTINGS_NOTIFICATION_DIALOG_OK_TEXT" desc="A text shown to user on dialog's ok button when he enabled Brave VPN and we override settings">
+  <message name="IDS_BRAVE_VPN_DNS_SETTINGS_NOTIFICATION_DIALOG_OK_TEXT" desc="A text shown to user on dialog's ok button when he enabled Halalz VPN and we override settings">
     Ok
   </message>
-  <message name="IDS_BRAVE_VPN_DNS_POLICY_CHECKBOX" desc="A text shown to user on dialog's checkbpox when he enabled Brave VPN with disabled DoH by policies">
+  <message name="IDS_BRAVE_VPN_DNS_POLICY_CHECKBOX" desc="A text shown to user on dialog's checkbpox when he enabled Halalz VPN with disabled DoH by policies">
     Do not warn me about this anymore.
   </message>
   <message name="IDS_BRAVE_VPN_SUPPORT_TIMEZONE" desc="Label on dialog to report bug to technical support ">
